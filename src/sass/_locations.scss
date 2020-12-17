@@ -1,3 +1,16 @@
+.locations ul {
+  @extend %list;
+}
+
+.locations a {
+  @extend %link;
+}
+
+.locations h3,
+p {
+  margin: 0px;
+}
+
 //пример для фона загрузки разных размеров и плотностей
 // body {
 //   @media screen and(max-width: $tablet - 1) {
