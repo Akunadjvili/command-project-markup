@@ -10,6 +10,53 @@
 p {
   margin: 0px;
 }
+.locations {
+  background-color: $secondary-bg-color;
+}
+
+.container {
+  border: 1px solid blue;
+}
+
+.locations-card-item {
+  width: 220px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 43px 21px 43px 20px;
+
+  background: $white;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.locations-restaurant {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16px;
+  width: 80px;
+  margin-bottom: 25px;
+
+  color: $white;
+  background-color: $primary-overlay-decor-color;
+  border-radius: 4px;
+
+  &.locations-ftruck {
+    width: 130px;
+    background-color: $secondary-overlay-decor-color;
+  }
+}
 
 //пример для фона загрузки разных размеров и плотностей
 // body {
