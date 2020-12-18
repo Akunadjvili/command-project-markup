@@ -12,7 +12,9 @@ p {
 }
 .locations {
   background-color: $secondary-bg-color;
+  padding-top: 82px;
   padding-bottom: 113px;
+  background: linear-gradient(180deg, $white 10%, $secondary-bg-color 0);
 }
 
 .container {
