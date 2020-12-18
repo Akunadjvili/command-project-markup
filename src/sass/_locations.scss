@@ -125,8 +125,9 @@ p {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.31;
-  display: inline-block;
+  display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   color: $white;
 
@@ -147,6 +148,17 @@ p {
   &.locations-franchise {
     background-color: $white;
     color: $primary-title-color;
+  }
+}
+
+.location-button-icon {
+  fill: $white;
+  width: 8px;
+  height: 10px;
+  margin-left: 8px;
+
+  &.location-button-iconfr {
+    margin-left: 13px;
   }
 }
 
