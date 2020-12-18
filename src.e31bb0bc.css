@@ -71,6 +71,329 @@ input[type=radio].visually-hidden {
   overflow: hidden;
 }
 
+.hero {
+  position: relative;
+  z-index: 1000;
+}
+
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  height: 502px;
+  max-width: 100%;
+  background-color: #ffb8ca;
+  background-image: url(/ice-cream.dbf94514.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+@media screen and (min-width: 320px) {
+  .hero {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    height: 400px;
+    background-image: url(/baby.ea28b643.png), url(/ice-cream.94078148.png), url(/milk.7a2abee1.png);
+    background-position: bottom right 5%, bottom right 30%, bottom 10% left 5%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1280px;
+    height: 665px;
+    background-image: url(/baby.129ecb88.png), url(/ice-cream.9cb4e14d.png), url(/milk.e65f588e.png);
+    background-position: bottom right 13%, bottom right 40%, bottom 10% left 8%;
+  }
+}
+
+.hero__title {
+  margin: 0;
+  padding-top: 193px;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    padding-top: 102px;
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    padding-top: 171px;
+    padding-left: 50px;
+    font-size: 38px;
+  }
+}
+
+.hero__title__text {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 96.5%;
+  color: #d41443;
+}
+@media screen and (min-width: 768px) {
+  .hero__title__text {
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title__text {
+    font-size: 58px;
+  }
+}
+
+.hero__button {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 19px;
+  padding: 0;
+  padding-left: 13px;
+  padding-right: 13px;
+  height: 24px;
+  border-radius: 20px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  background: #d41443;
+  color: #ffffff;
+  border-color: transparent;
+  outline: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    height: 40px;
+    padding-left: 19px;
+    padding-right: 19px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__button.products {
+    margin-right: 4px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__button.products {
+    margin-left: 50px;
+    margin-right: 15px;
+  }
+}
+
+.hero__button:hover {
+  background: #c7133e;
+}
+
+.hero__button.recipe {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #ffffff;
+  color: #d41443;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .hero__button.recipe {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+}
+
+.hero__button.recipe:hover {
+  background: #ecebeb;
+}
+
+.hero__text__box {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero__text__box {
+    display: block;
+    position: absolute;
+    left: 154px;
+    top: 292px;
+    width: 124px;
+    height: 48px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__text__box {
+    left: 295px;
+    top: 485px;
+    width: 203px;
+    height: 78px;
+  }
+}
+
+.hero__text__box::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  margin-top: 8px;
+  width: 18px;
+  height: 18px;
+  border-radius: 20px;
+  background-image: url(/arrow-right.0f2febed.jpg);
+}
+@media screen and (min-width: 1200px) {
+  .hero__text__box::after {
+    width: 26px;
+    height: 26px;
+    margin-top: 20px;
+    background-image: url(/arrow-right.7a9f24fa.jpg);
+  }
+}
+
+.hero__text {
+  margin: 0;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .hero__text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+.hero__text.cafe {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  position: absolute;
+  width: 43px;
+  height: 44px;
+  left: 691px;
+  top: 94px;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  color: #d41443;
+}
+@media screen and (min-width: 1200px) {
+  .hero__text.cafe {
+    width: 72px;
+    height: 77px;
+    left: 1111px;
+    top: 156px;
+    font-size: 46px;
+    line-height: 53px;
+  }
+}
+
+.hero__text.truck {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: row-reverse; */
+  justify-content: right;
+  position: absolute;
+  width: 56px;
+  height: 43px;
+  left: 683px;
+  top: 151px;
+  margin-top: 13px;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  color: #d41443;
+}
+@media screen and (min-width: 1200px) {
+  .hero__text.truck {
+    width: 96px;
+    height: 76px;
+    left: 1091px;
+    top: 248px;
+    margin-top: 21px;
+    font-size: 46px;
+    line-height: 53px;
+  }
+}
+
+.hero__text.cafe::before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  top: 13px;
+  left: 9px;
+  width: 16px;
+  height: 16px;
+  border-radius: 20px;
+  z-index: -1;
+  background-image: url(/circle.d528f0a7.svg);
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .hero__text.cafe::before {
+    left: 15px;
+    top: 22px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.hero__text.truck::before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  left: 45px;
+  width: 16px;
+  height: 16px;
+  border-radius: 20px;
+  z-index: -1;
+  background-image: url(/circle.d528f0a7.svg);
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .hero__text.truck::before {
+    left: 77px;
+    bottom: 5px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.hero__span {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .hero__span {
+    font-size: 14px;
+  }
+}
+
 .container-products {
   background-color: #ffffff;
   padding-top: 121px;
