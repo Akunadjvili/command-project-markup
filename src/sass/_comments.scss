@@ -1,28 +1,295 @@
-//пример для фона загрузки разных размеров и плотностей
-// body {
-//   @media screen and(max-width: $tablet - 1) {
-//     background-image: url('../images/gallery/mobile/gallary-bg.jpg');
-//     @media screen and (min-device-pixel-ratio: 2),
-//       screen and (min-resolution: 192dpi),
-//       screen and (min-resolution: 2dppx) {
-//       background-image: url('../images/gallery/mobile/gallary-bg@2x.jpg');
-//     }
-//   }
 
-//   @media screen and(min-width: $tablet) {
-//     background-image: url('../images/gallery/tablet/gallary-bg.jpg');
-//     @media screen and (min-device-pixel-ratio: 2),
-//       screen and (min-resolution: 192dpi),
-//       screen and (min-resolution: 2dppx) {
-//       background-image: url('../images/gallery/tablet/gallary-bg@2x.jpg');
+.comments-container {
+ padding-top: 80px;
+ padding-bottom: 86px;
+
+  @media screen and(min-width: $tablet) and (max-width: 1199px) {
+    // max-width: 620px; 
+    padding-top: 121px;
+    padding-bottom: 119px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  @media screen and(min-width: $desktop) {
+    // max-width: 926px;
+    padding-top: 121px;
+    padding-bottom: 119px;
+    padding-right: 0;
+    padding-left: 0;
+  }  
+
+}
+.comments-slider {
+ margin-left: auto;
+ margin-right: auto;
+  
+@media screen and (max-width: 767px) {
+  width: 100%;
+}
+
+@media screen and(min-width: $tablet) and (max-width: 1199) {
+ width: 620px; 
+}
+
+@media screen and(min-width: $desktop) {
+ width: 926px;
+}
+}
+
+.comments-foto {
+margin-left: auto;
+ margin-right: auto;
+}
+
+.comment-text-container {
+ position: relative;
+ z-index: -5;
+ background-color: $alternate-bg-color;
+
+@media screen and (max-width: 767px) {
+  margin-top: 29px;
+ margin-bottom: 30px;
+}
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+  margin-top: 18px;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: $desktop) {
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+  } 
+}
+
+.comment-text {
+  font-family: $primary-font;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2.58;
+    letter-spacing: 0.04em;
+    color: $black;
+
+@media screen and (max-width: 767px) {
+    padding: 41px 50px 20px 50px;  
+    font-size: 12px;
+   line-height: 2;
+  }
+
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+    // padding: 47px 3px 28px 0px;
+    padding-top: 47px;
+    padding-bottom: 28px;
+    padding-right: 80px;
+    padding-left: 80px;
+    font-size: 14px;
+    line-height: 2.14;
+    // width: 544px;
+  }
+
+ @media screen and (min-width: $desktop) {
+    padding: 47px 89px 29px 67px;
+
+   font-size: 16px;
+   line-height: 1.875;
+  }  
+}
+
+.comment-text-tablet {
+  width: 544px;
+}
+
+.comment-text-desktop {
+width: 813px;
+}
+ 
+.comment-dekor {
+
+  position: absolute;
+  display: block;
+  top: 28px;
+  left: 61px;
+
+  z-index: -1;
+  width: 54px;
+  height: 40px;
+
+  // background-image: url("../images/svg/slick-bg.svg");
+  background-image: url("../images/comments-decor.svg");
+  fill: $primary-decor-color;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px){
+    top: 20%;
+    left: 5%;
+  }
+
+ @media screen and(min-width: $desktop) {
+  top: 22%;
+  // left: 50px;
+  }  
+}
+
+ @media screen  and (max-width: 767px) {
+   .comment-text-desktop,
+   .comment-text-tablet {
+     display: none; 
+   }
+ }
+
+ @media screen  and (min-width: $desktop) {
+   .comment-text-mobile,
+   .comment-text-tablet {
+     display: none; 
+   }
+ }
+
+@media screen  and (min-width: $tablet) and (max-width: 1199px) {
+  .comment-text-mobile,
+   .comment-text-desktop {
+     display: none; 
+}
+}
+ 
+.comment-dekorline {
+  display: block;
+  
+  border-bottom: 1px solid $primary-decor-color;
+  max-width: 180px;
+  
+@media screen  and (min-width: $tablet) and (max-width: 1199px) {
+  max-width: 524px;
+}
+@media screen  and (min-width: $desktop) {
+  max-width: 813px;
+}
+}
+
+.comment-dots {
+    display: flex;
+    justify-content: center;
+
+    & .dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: $smallcircle-decor-color;
+ }
+    & .dot + .dot {
+        margin-left: 10px;
+    }
+}
+
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+  
+  & .comment-icon-home {
+    width: 12.4px;
+    height: 12px;
+    fill: $home-decor-color;
+  }
+
+    & .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+     background-color: $largecircle-decor-color;  
+
+  
+ }
+    & .dot {
+        margin-left: 18px;
+    }
+}
+
+ .comment-local {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-family: $primary-font;
+    font-weight: 500;
+
+    line-height: 1.85;
+    text-align: center;
+    letter-spacing: 0.04em;
+   font-size: 14px;  
+   
+    @media screen and (min-width: $tablet) and (max-width: 1199px){
+    margin-top: 14px;
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 1.875;
+  }
+   @media screen and(min-width: $desktop) {
+    margin-top: 12px;
+    margin-bottom: 32px;
+    font-size: 20px;
+  }    
+}
+
+.zaglushka-foto {
+   margin-left: auto;
+ margin-right: auto;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-color: crimson;
+}
+.zaglushka-home {
+   width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: crimson;
+}
+
+
+// .comment-dekorline::after {
+//   content: '';
+//   display: block;
+  
+//   width: 180px;
+//   height: 1px;
+//   background-color:  $primary-decor-color;
+// @media screen and(min-width: $tablet) {
+//   width: 524px;
+// }
+// }
+
+// .comment-text-mobile {
+//     @media screen and (min-width: $tablet) {
+//       display: none;
 //     }
+// }
+
+// // .comment-text-tablet {
+// //     @media screen and (min-width: $tablet) and (max-width: 1199px){
+// //       display: none;
+// //     }
+// // }
+
+// .comment-text-tablet {
+//   @media screen and (min-width: $desktop) and (max-width: 319px){
+//     display: none; 
 //   }
-//   @media screen and(min-width: $desktop) {
-//     background-image: url('../images/gallery/desktop/gallary-bg.jpg');
-//     @media screen and (min-device-pixel-ratio: 2),
-//       screen and (min-resolution: 192dpi),
-//       screen and (min-resolution: 2dppx) {
-//       background-image: url('../images/gallery/desktop/gallary-bg@2x.jpg');
-//     }
+// }
+
+// .comment-text-desktop {
+//   @media screen  and (max-width: 1199px) {
+//     display: none; 
 //   }
+// }
+
+//  .comment-text-mobile,
+//  .comment-text-desktop,
+//   .comment-text-tablet {
+//     display: flex;
+//     flex-direction: column;
+//   } 
+
+// .comment-text-container {
+//   display: flex;
+//     flex-direction: column;
+//     justify-content: center;
 // }
