@@ -118,6 +118,30 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/menu.js":[function(require,module,exports) {
+// (() => {
+//   const menuBtnRef = document.querySelector("[data-menu-button]");
+//   const mobileMenuRef = document.querySelector("[data-menu]");
+//   const openStateAnimate = 'animate__fadeInRight';
+//   const closeStateAnimate = 'animate__fadeOutRight';
+//   const element = document.querySelector('[data-menu]');
+//   element.classList.add('animate__animated', openStateAnimate);
+//   menuBtnRef.addEventListener("click", () => {
+//     const expanded =
+//       menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+//     if(expanded){
+//       element.classList.remove(openStateAnimate);
+//       element.classList.add(closeStateAnimate);
+//     }else{
+//       element.classList.remove(closeStateAnimate);
+//       element.classList.add(openStateAnimate);
+//     }
+//     menuBtnRef.classList.toggle("is-open");
+//     menuBtnRef.setAttribute("aria-expanded", !expanded);
+//     if (!mobileMenuRef.classList.contains('is-open')) { 
+//       mobileMenuRef.classList.toggle("is-open");
+//     } 
+//   });
+// })();
 (function () {
   var menuBtnRef = document.querySelector("[data-menu-button]");
   var mobileMenuRef = document.querySelector("[data-menu]");
@@ -157,7 +181,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "2539" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "3854" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
