@@ -15,7 +15,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .logo {
@@ -150,22 +150,26 @@
   position: absolute;
   right: 0;
   top: 0;
-  transform: translateX(100%);
-  z-index: 55;
   background-color: rgba(225, 121, 146, 1);
   width: 250px;
   height: 502px;
   margin-left: auto;
   opacity: 0;
+  transform: translateX(100%);
+  z-index: 100;
   pointer-events: none;
-  &.is-open {
+
+  &.is-hidden {
     transform: translateX(0);
     opacity: 1;
-    pointer-events: visiblePainted;
   }
   @media screen and(min-width: $tablet) {
     width: 254px;
     height: 1020px;
+  }
+
+  @media screen and(min-width: $desktop) {
+    display: none;
   }
 }
 
