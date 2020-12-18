@@ -98,6 +98,10 @@ p {
   margin-bottom: 25px;
 }
 
+.locations-work-list > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .locations-contact-list a {
   font-family: DM Sans;
   font-style: normal;
@@ -106,6 +110,38 @@ p {
   line-height: 1.5;
 
   color: #907e82;
+}
+
+.locations-button-group {
+  text-align: center;
+}
+
+.locations-button {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  color: $white;
+
+  width: 161.45px;
+  height: 44px;
+
+  background-color: $primary-accent-color;
+  border-radius: 22px;
+  border: none;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &.locations-franchise {
+    background-color: $white;
+    color: $primary-title-color;
+  }
 }
 
 //пример для фона загрузки разных размеров и плотностей
