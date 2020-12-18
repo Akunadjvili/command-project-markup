@@ -58,6 +58,40 @@ p {
   }
 }
 
+.locations-card-item h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: $black;
+
+  margin-bottom: 10px;
+}
+
+.locations-description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $alternate-text-color;
+
+  border-bottom: 1px solid $primary-decor-color;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.locations-card-item .locations-workdays {
+  margin-bottom: -2px;
+}
+
+.locations-worktime {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: $secondary-title-color;
+}
+
 //пример для фона загрузки разных размеров и плотностей
 // body {
 //   @media screen and(max-width: $tablet - 1) {
