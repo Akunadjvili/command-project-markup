@@ -1,4 +1,4 @@
-.locations ul {
+ul {
   @extend %list;
 }
 
@@ -90,6 +90,22 @@ p {
   font-size: 12px;
   line-height: 1.86;
   color: $secondary-title-color;
+}
+
+.locations-work-list {
+  border-bottom: 1px solid $primary-decor-color;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.locations-contact-list a {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+
+  color: #907e82;
 }
 
 //пример для фона загрузки разных размеров и плотностей
