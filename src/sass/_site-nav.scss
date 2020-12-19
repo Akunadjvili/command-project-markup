@@ -22,7 +22,7 @@
   background-color: rgba(0, 0, 0, 0);
 }
 
-.logo {
+.logo-site-nav {
   margin-top: 6px;
   margin-bottom: 6px;
   @media screen and(min-width: $tablet) {
@@ -151,7 +151,7 @@
   padding-right: 49px;
 }
 
-.mobile-nav {
+.mobile-nav-site-nav {
   position: absolute;
   display: none;
   right: 0;
@@ -170,11 +170,11 @@
   }
 }
 
-.mobile-nav.is-open {
+.mobile-nav-site-nav.is-open {
   display: block;
 }
 
-.burger-menu {
+.burger-menu-site-nav {
   display: flex;
   align-items: center;
   position: absolute;
@@ -198,37 +198,37 @@
   }
 }
 
-.burger-menu:hover,
-.burger-menu {
+.burger-menu-site-nav:hover,
+.burger-menu-site-nav:focus {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.burger-menu .icon-true-site-nav {
+.burger-menu-site-nav .icon-true-site-nav {
   display: block;
 }
 
-.burger-menu.is-open .icon-true-site-nav {
+.burger-menu-site-nav.is-open .icon-true-site-nav {
   display: none;
 }
 
-.burger-menu .icon-false-site-nav {
+.burger-menu-site-nav .icon-false-site-nav {
   display: none;
 }
 
-.burger-menu.is-open .icon-false-site-nav {
+.burger-menu-site-nav.is-open .icon-false-site-nav {
   display: block;
 }
 
 @media screen and(max-width: ($desktop - 1px)) {
-  .burger-menu.is-open {
+  .burger-menu-site-nav.is-open {
     top: 24px;
     right: 34px;
   }
 }
 
-.burger-menu > span,
-.burger-menu > span::before,
-.burger-menu > span::after {
+.burger-menu-site-nav > span,
+.burger-menu-site-nav > span::before,
+.burger-menu-site-nav > span::after {
   display: block;
   position: absolute;
 
@@ -238,12 +238,12 @@
   background-color: #d41443;
 }
 
-.burger-menu > span::before {
+.burger-menu-site-nav > span::before {
   content: '';
   top: -6px;
 }
 
-.burger-menu > span::after {
+.burger-menu-site-nav > span::after {
   content: '';
   top: 6px;
 }
