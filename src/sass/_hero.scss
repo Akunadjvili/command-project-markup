@@ -49,6 +49,7 @@
 .hero__title {
   margin: 0;
   padding-top: 193px;
+
   font-family: Titan One;
   font-style: normal;
   font-weight: 400;
@@ -57,6 +58,9 @@
   text-transform: uppercase;
   color: #ffffff;
 
+  @media screen and (max-width: 767px) {
+    padding-left: 20px;
+  }
   @media screen and (min-width: 768px) {
     padding-top: 102px;
     font-size: 22px;
@@ -148,6 +152,9 @@
   }
 }
 .hero__button.products {
+  @media screen and (max-width: 767px) {
+    margin-left: 20px;
+  }
   @media screen and (min-width: 768px) {
     margin-right: 4px;
   }
@@ -247,6 +254,9 @@
 
   color: #d41443;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   @media screen and (min-width: 1200px) {
     width: 72px;
     height: 77px;
@@ -278,6 +288,9 @@
 
   color: #d41443;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   @media screen and (min-width: 1200px) {
     width: 96px;
     height: 76px;
