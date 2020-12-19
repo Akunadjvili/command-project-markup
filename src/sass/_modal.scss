@@ -1,3 +1,114 @@
+
 .modal {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  border-radius: 24px;
+  background-color: $white;
+  width: 250px;
+  height: 400px;
+
+  // transition: transform $time-transition;
+
+  @media screen and (min-width:320px) and (max-width:1199px) {
+      width: 450px;
+      height: 609px;
+  }
+
+  @include for-size(desktop) {
+      width: 528px;
+      height: 581px;
+  }
+
+
+
+}
+
+.backdrop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.1);
+}
+
+
+.title-modal {
+  // margin: 0;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  font-family: Titan One;
+  font-size: 26px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-title-color;
+  // padding-top: 30px;
+
+
+  @media screen and (min-width:320px) and (max-width:1199px) {
+      font-size: 34px;
+  }
+
+  @include for-size(desktop) {
+    font-size: 58px;
+    letter-spacing: 0.06em;
+  
+  }
+}
+
+.modal-list {
+  @extend %list;
+  
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
+  // }
+  
+}
+.modal-product-item {
+  display: block;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 5px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 24px;
+
+}
+
+.icecream-item { 
+  background-color:$alternate-overlay-decor-color;
+}
+
+.icecoffee-item {
+  background-color: $primary-overlay-decor-color;
+}
+
+.milkshakes-item {
+  background-color: $secondary-overlay-decor-color;
+}
+
+.title-modal-product {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
+  color: $white;
 }
