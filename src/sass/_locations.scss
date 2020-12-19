@@ -121,8 +121,28 @@ p {
   font-size: 12px;
   line-height: 1.86;
   color: $black;
+}
 
+@media screen and (min-width: $tablet) {
+  .locations-card-item h3 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .locations-card-item h3 {
+    font-size: 16px;
+  }
+}
+// --------------------------------
+.locations-card-item > h3 {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: $desktop - 1) and (min-width: $tablet) {
+  .locations-card-item > h3 {
+    margin-bottom: 14px;
+  }
 }
 
 .locations-description {
@@ -138,6 +158,25 @@ p {
   margin-bottom: 25px;
 }
 
+@media screen and (min-width: $tablet) {
+  .locations-description {
+    font-size: 14px;
+    line-height: 1.66;
+    letter-spacing: 0.04em;
+    padding-bottom: 29px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .locations-description {
+    font-size: 16px;
+    line-height: 1.83;
+    padding-bottom: 31px;
+    margin-bottom: 32px;
+  }
+}
+// --------------------------------------------------
 .locations-card-item .locations-workdays {
   margin-bottom: -2px;
 }
@@ -150,15 +189,58 @@ p {
   color: $secondary-title-color;
 }
 
+@media screen and (min-width: $tablet) {
+  .locations-worktime {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .locations-worktime {
+    font-size: 16px;
+  }
+}
+
+// -----------------------------------
+
 .locations-work-list {
   border-bottom: 1px solid $primary-decor-color;
   padding-bottom: 24px;
   margin-bottom: 25px;
 }
 
+@media screen and (min-width: $tablet) {
+  .locations-work-list {
+    padding-bottom: 29px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .locations-work-list {
+    padding-bottom: 31px;
+    margin-bottom: 32px;
+  }
+}
+// --------------------------------------
+
 .locations-work-list > li:not(:last-child) {
   margin-bottom: 10px;
 }
+
+@media screen and (min-width: $tablet) {
+  .locations-work-list > li:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .locations-work-list > li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+// ----------------------------------------
 
 .locations-contact-list a {
   font-family: DM Sans;
@@ -170,10 +252,40 @@ p {
   color: #907e82;
 }
 
+@media screen and (min-width: $tablet) {
+  .locations-contact-list a {
+    font-size: 14px;
+    line-height: 1.83;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .locations-contact-list a {
+    font-size: 16px;
+  }
+}
+// -----------------------------------------
+
 .locations-button-group {
   text-align: center;
   margin-top: 54px;
 }
+
+@media screen and (min-width: $tablet) {
+  .locations-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 81px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .locations-button-group {
+    margin-top: 86px;
+  }
+}
+
+// ------------------------------------------------
 
 .locations-button {
   font-family: DM Sans;
@@ -206,6 +318,17 @@ p {
     color: $primary-title-color;
   }
 }
+
+@media screen and (min-width: $tablet) {
+  .locations-button {
+    margin: 0px;
+    &:not(:last-child) {
+      margin-bottom: 0px;
+      margin-right: 15px;
+    }
+  }
+}
+// ---------------------------------
 
 .location-button-icon {
   fill: $white;
