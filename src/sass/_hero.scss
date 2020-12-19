@@ -93,7 +93,7 @@
   height: 24px;
   border-radius: 20px;
   border-color: transparent;
-  outline: none;
+  outline-color: white;
   background: #d41443;
 
   transition-duration: 250ms;
@@ -120,6 +120,9 @@
   border-color: transparent;
   outline: none;
 
+  $trans-duration: 250ms;
+  $trans-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (min-width: 1200px) {
     font-size: 14px;
   }
@@ -136,6 +139,9 @@
   border-color: transparent;
   outline: none;
   color: #d41443;
+
+  $trans-duration: 250ms;
+  $trans-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
@@ -157,7 +163,7 @@
   padding-right: 15px;
 
   background: #ffffff;
-
+  outline-color: #ffffff;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
