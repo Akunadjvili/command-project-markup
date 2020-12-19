@@ -8,6 +8,10 @@
   margin: 0;
 }
 .site-nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -15,7 +19,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .logo {
@@ -148,25 +152,25 @@
 
 .mobile-nav {
   position: absolute;
+  display: none;
   right: 0;
   top: 0;
-  transform: translateX(100%);
-  z-index: 55;
   background-color: rgba(225, 121, 146, 1);
   width: 250px;
   height: 502px;
   margin-left: auto;
-  opacity: 0;
-  pointer-events: none;
-  &.is-open {
-    transform: translateX(0);
-    opacity: 1;
-    pointer-events: visiblePainted;
+
+  @media screen and(max-width: ($tablet - 1)) {
+    width: 100%;
   }
   @media screen and(min-width: $tablet) {
     width: 254px;
-    height: 1020px;
+    height: 399px;
   }
+}
+
+.mobile-nav.is-open {
+  display: block;
 }
 
 .burger-menu {
@@ -190,6 +194,34 @@
   }
   @media screen and(min-width: $desktop) {
     display: none;
+  }
+}
+
+.burger-menu:hover,
+.burger-menu {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.burger-menu .icon-true-site-nav {
+  display: block;
+}
+
+.burger-menu.is-open .icon-true-site-nav {
+  display: none;
+}
+
+.burger-menu .icon-false-site-nav {
+  display: none;
+}
+
+.burger-menu.is-open .icon-false-site-nav {
+  display: block;
+}
+
+@media screen and(max-width: ($desktop - 1px)) {
+  .burger-menu.is-open {
+    top: 24px;
+    right: 34px;
   }
 }
 
