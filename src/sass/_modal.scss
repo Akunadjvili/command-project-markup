@@ -6,19 +6,20 @@
   transform: translate(-50%, -50%) scale(1);
   border-radius: 24px;
   background-color: $white;
-  width: 250px;
-  height: 400px;
+  // width: 250px;
+  // height: 400px;
+
 
   // transition: transform $time-transition;
 
   @media screen and (min-width:320px) and (max-width:1199px) {
       width: 450px;
-      height: 609px;
+      height: 637px;
   }
 
   @include for-size(desktop) {
       width: 528px;
-      height: 581px;
+      height: 690px;
   }
 
 
@@ -113,11 +114,6 @@
   color: $white;
 }
 
-.input-modal-checkbox {
-// margin-left: 50px;
-
-}
-
 .label-modal {
   display: block;
   // margin-left: 50px;
@@ -136,4 +132,78 @@
 .label-modal {
   color: $white;
   margin-bottom: 5px;
+
+}
+
+.close-btn {
+  position: absolute;
+  display: inline-block;
+  right: 8px;
+  top: 8px;
+  background-color: $white;
+  /* border: 0; */
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 30px;
+  height: 30px;
+  fill: $primary-title-color;
+
+  &:hover .close-icon {
+      fill: $secondary-accent-color;
+  }
+}
+
+
+.close-icon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  max-height: 100%;
+  width: 18px;
+  // fill: $primary-title-color;
+
+  // height: 18px;
+  // transition: fill $time-transition;
+}
+
+.price {
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.border-line {
+  border-top: 1px solid #E1E1E1;
+}
+
+.modal-button-pay {
+  display: inline-block;
+  width: 80%;
+  height: 50px;
+  display: block;
+  background: #D41342;
+  border-radius: 22px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
+}
+
+.modal-pay-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  align-items: center;
+  text-align: center;
+  border: none;
+  color: $white;
+
+  text-transform: uppercase;
 }
