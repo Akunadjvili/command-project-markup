@@ -1,16 +1,29 @@
 .hero {
   position: relative;
-  z-index: 1000;
-}
-.page-header {
   margin-left: auto;
   margin-right: auto;
-  height: 502px;
-  max-width: 100%;
+  z-index: 1000;
   background-color: #ffb8ca;
+
+  @media screen and (max-width: 767px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+  }
+}
+.hero__container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  height: 502px;
+
   background-image: url(../images/hero/mobile/ice-cream.png);
   background-repeat: no-repeat;
   background-position: right bottom;
+
   @media screen and (min-width: 320px) {
     width: 320px;
   }
@@ -20,16 +33,18 @@
     background-image: url(../images/hero/tablet/baby.png),
       url(../images/hero/tablet/ice-cream.png),
       url(../images/hero/tablet/milk.png);
-    background-position: bottom right 5%, bottom right 30%, bottom 10% left 5%;
+    background-position: bottom right 5%, bottom right 30%, bottom 10% left 0%;
   }
   @media screen and (min-width: 1200px) {
-    width: 1280px;
+    width: 1200px;
     height: 665px;
     background-image: url(../images/hero/desktop/baby.png),
       url(../images/hero/desktop/ice-cream.png),
       url(../images/hero/desktop/milk.png);
-    background-position: bottom right 13%, bottom right 40%, bottom 10% left 8%;
+    background-position: bottom right 12%, bottom right 42%, bottom 10% left 0%;
   }
+}
+.container {
 }
 .hero__title {
   margin: 0;
@@ -48,7 +63,6 @@
   }
   @media screen and (min-width: 1200px) {
     padding-top: 171px;
-    padding-left: 50px;
     font-size: 38px;
   }
 }
@@ -78,16 +92,9 @@
   padding-right: 13px;
   height: 24px;
   border-radius: 20px;
-
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 10px;
-  background: #d41443;
-  color: #ffffff;
   border-color: transparent;
   outline: none;
+  background: #d41443;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -100,12 +107,45 @@
     font-size: 14px;
   }
 }
+.anchor__link__products {
+  list-style: none;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  text-decoration: none;
+
+  color: #ffffff;
+  border-color: transparent;
+  outline: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+}
+.anchor__link__recipe {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  text-decoration: none;
+  list-style: none;
+
+  border-color: transparent;
+  outline: none;
+  color: #d41443;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+}
 .hero__button.products {
   @media screen and (min-width: 768px) {
     margin-right: 4px;
   }
   @media screen and (min-width: 1200px) {
-    margin-left: 50px;
     margin-right: 15px;
   }
 }
@@ -117,7 +157,6 @@
   padding-right: 15px;
 
   background: #ffffff;
-  color: #d41443;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -135,14 +174,14 @@
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
-    left: 154px;
+    left: 120px;
     top: 292px;
 
     width: 124px;
     height: 48px;
   }
   @media screen and (min-width: 1200px) {
-    left: 295px;
+    left: 180px;
     top: 485px;
 
     width: 203px;
@@ -205,7 +244,7 @@
   @media screen and (min-width: 1200px) {
     width: 72px;
     height: 77px;
-    left: 1111px;
+    left: 1011px;
     top: 156px;
 
     font-size: 46px;
@@ -236,7 +275,7 @@
   @media screen and (min-width: 1200px) {
     width: 96px;
     height: 76px;
-    left: 1091px;
+    left: 992px;
     top: 248px;
     margin-top: 21px;
 
@@ -301,31 +340,3 @@
     font-size: 14px;
   }
 }
-//пример для фона загрузки разных размеров и плотностей
-// body {
-//   @media screen and(max-width: $tablet - 1) {
-//     background-image: url('../images/gallery/mobile/gallary-bg.jpg');
-//     @media screen and (min-device-pixel-ratio: 2),
-//       screen and (min-resolution: 192dpi),
-//       screen and (min-resolution: 2dppx) {
-//       background-image: url('../images/gallery/mobile/gallary-bg@2x.jpg');
-//     }
-//   }
-
-//   @media screen and(min-width: $tablet) {
-//     background-image: url('../images/gallery/tablet/gallary-bg.jpg');
-//     @media screen and (min-device-pixel-ratio: 2),
-//       screen and (min-resolution: 192dpi),
-//       screen and (min-resolution: 2dppx) {
-//       background-image: url('../images/gallery/tablet/gallary-bg@2x.jpg');
-//     }
-//   }
-//   @media screen and(min-width: $desktop) {
-//     background-image: url('../images/gallery/desktop/gallary-bg.jpg');
-//     @media screen and (min-device-pixel-ratio: 2),
-//       screen and (min-resolution: 192dpi),
-//       screen and (min-resolution: 2dppx) {
-//       background-image: url('../images/gallery/desktop/gallary-bg@2x.jpg');
-//     }
-//   }
-// }
