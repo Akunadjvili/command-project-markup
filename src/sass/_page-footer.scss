@@ -173,9 +173,16 @@
 }
 .item-icon{
     @extend %list;
-    &:not(:last-child){
-        margin-right: 28px;
+    &:last-child{
+        margin-left: 25px;
     }
+    &:first-child{
+        margin-right: 24px;
+    }
+    // &:not(:last-child){
+    //     margin-right: 24px;
+    // }
+
 }
 
 .contacts-icon-svg{
@@ -192,7 +199,8 @@
     height: 32px;
     background-color: $color-icon; 
     border-radius: 50%;
-
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus{  
         background-color:  $primary-title-color; 
