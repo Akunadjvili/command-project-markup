@@ -1,19 +1,20 @@
 
 .comments-container {
  padding-top: 80px;
- padding-bottom: 86px;
+  padding-bottom: 50px;
+//  padding-bottom: 86px;
 
   @media screen and(min-width: $tablet) and (max-width: 1199px) {
     // max-width: 620px; 
     padding-top: 121px;
-    padding-bottom: 119px;
+    // padding-bottom: 119px;
     padding-right: 0;
     padding-left: 0;
   }
   @media screen and(min-width: $desktop) {
     // max-width: 926px;
     padding-top: 121px;
-    padding-bottom: 119px;
+    // padding-bottom: 119px;
     padding-right: 0;
     padding-left: 0;
   }  
@@ -26,9 +27,8 @@
 @media screen and (max-width: 767px) {
   width: 100%;
 }
-
-@media screen and(min-width: $tablet) and (max-width: 1199) {
- width: 620px; 
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+  width: 620px; 
 }
 
 @media screen and(min-width: $desktop) {
@@ -80,10 +80,10 @@ margin-left: auto;
     // padding: 47px 3px 28px 0px;
     padding-top: 47px;
     padding-bottom: 28px;
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: 36px;
+    padding-left: 60px;
     font-size: 14px;
-    line-height: 2.14;
+    line-height: 2;
     // width: 544px;
   }
 
@@ -122,7 +122,7 @@ width: 813px;
 
   @media screen and (min-width: $tablet) and (max-width: 1199px){
     top: 20%;
-    left: 5%;
+    left: 8%;
   }
 
  @media screen and(min-width: $desktop) {
