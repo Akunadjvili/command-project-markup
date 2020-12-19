@@ -199,8 +199,8 @@
     height: 32px;
     background-color: $color-icon; 
     border-radius: 50%;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: $trans-duration;
+    transition-timing-function: $trans-function;
     &:hover,
     &:focus{  
         background-color:  $primary-title-color; 
