@@ -1337,6 +1337,7 @@ input[type=radio].visually-hidden {
 .comments-container {
   padding-top: 80px;
   padding-bottom: 50px;
+  user-select: none;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .comments-container {
@@ -1356,6 +1357,7 @@ input[type=radio].visually-hidden {
 .comments-slider {
   margin-left: auto;
   margin-right: auto;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 767px) {
   .comments-slider {
@@ -1373,9 +1375,83 @@ input[type=radio].visually-hidden {
   }
 }
 
+.comment-slider-item {
+  outline: 1px solid transparent;
+  display: inline-block;
+}
+
+.comments-slick-dots {
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+
+.comments-slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.comments-slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.comments-slick-dots li button:hover,
+.comments-slick-dots li button:focus {
+  outline: none;
+}
+
+.comments-slick-dots li button:hover:before,
+.comments-slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.comments-slick-dots li button:before {
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  content: "";
+  background: url("/circle-home.bbc7d7ea.svg");
+  background-repeat: no-repeat;
+}
+
+.comments-slick-dots li.slick-active button:before {
+  width: 13px;
+  height: 12px;
+  background: url("/home.f1c4a4e0.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .comments-foto {
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
 }
 
 .comment-text-container {
@@ -1451,6 +1527,7 @@ input[type=radio].visually-hidden {
   z-index: -1;
   width: 54px;
   height: 40px;
+  background-image: url("/slick-bg.7ca40396.svg");
   fill: #e1e1e1;
   background-repeat: no-repeat;
   background-size: contain;

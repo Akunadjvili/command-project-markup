@@ -117,42 +117,15 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/menu.js":[function(require,module,exports) {
-// (() => {
-//   const menuBtnRef = document.querySelector("[data-menu-button]");
-//   const mobileMenuRef = document.querySelector("[data-menu]");
-//   const openStateAnimate = 'animate__fadeInRight';
-//   const closeStateAnimate = 'animate__fadeOutRight';
-//   const element = document.querySelector('[data-menu]');
-//   element.classList.add('animate__animated', openStateAnimate);
-//   menuBtnRef.addEventListener("click", () => {
-//     const expanded =
-//       menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-//     if(expanded){
-//       element.classList.remove(openStateAnimate);
-//       element.classList.add(closeStateAnimate);
-//     }else{
-//       element.classList.remove(closeStateAnimate);
-//       element.classList.add(openStateAnimate);
-//     }
-//     menuBtnRef.classList.toggle("is-open");
-//     menuBtnRef.setAttribute("aria-expanded", !expanded);
-//     if (!mobileMenuRef.classList.contains('is-open')) { 
-//       mobileMenuRef.classList.toggle("is-open");
-//     } 
-//   });
-// })();
-(function () {
-  var menuBtnRef = document.querySelector("[data-menu-button]");
-  var mobileMenuRef = document.querySelector("[data-menu]");
-  var heroRef = document.querySelector('[data-hero]');
-  menuBtnRef.addEventListener("click", function () {
-    var expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-    menuBtnRef.classList.toggle("is-open");
-    menuBtnRef.setAttribute("aria-expanded", !expanded);
-    mobileMenuRef.classList.toggle("is-open"); // heroRef.classList.toggle('is-open');
+})({"js/slick.min.js":[function(require,module,exports) {
+$(document).ready(function () {
+  $('.comments-slider').slick({
+    dots: true,
+    arrows: false,
+    dotsClass: "comments-slick-dots",
+    speed: 300
   });
-})();
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -357,5 +330,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/menu.js"], null)
-//# sourceMappingURL=/menu.0c91648c.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/slick.min.js"], null)
+//# sourceMappingURL=/slick.min.d8b8b7fa.js.map
