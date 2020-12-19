@@ -172,23 +172,19 @@
 
 .mobile-nav-site-nav {
   position: absolute;
+  display: none;
   right: 0;
   top: 0;
   background-color: rgba(225, 121, 146, 1);
   width: 250px;
   height: 502px;
   margin-left: auto;
-  opacity: 0;
-  transform: translateX(100%);
-  z-index: 1001;
-
-  &.is-open {
-    transform: translateX(0);
-    opacity: 1;
+  @media screen and(max-width: ($tablet - 1)) {
+    width: 100%;
   }
   @media screen and(min-width: $tablet) {
     width: 254px;
-    height: 1020px;
+    height: 399px;
   }
 
   @media screen and(min-width: $desktop) {
@@ -196,7 +192,12 @@
   }
 }
 
-.burger-menu-site-nav {
+
+.mobile-nav.is-open {
+  display: block;
+}
+
+.burger-menu {
   display: flex;
   align-items: center;
   position: absolute;
@@ -225,16 +226,38 @@
   }
 }
 
+.burger-menu:hover,
+.burger-menu {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.burger-menu .icon-true-site-nav {
+  display: block;
+}
+
+.burger-menu.is-open .icon-true-site-nav {
+  display: none;
+}
+
+.burger-menu .icon-false-site-nav {
+  display: none;
+}
+
+.burger-menu.is-open .icon-false-site-nav {
+  display: block;
+}
+
 @media screen and(max-width: ($desktop - 1px)) {
-  .burger-menu-site-nav.is-open {
+  .burger-menu.is-open {
     top: 24px;
-    right: 0;
+    right: 34px;
   }
 }
 
-.burger-menu-site-nav > span,
-.burger-menu-site-nav > span::before,
-.burger-menu-site-nav > span::after {
+.burger-menu > span,
+.burger-menu > span::before,
+.burger-menu > span::after {
+
   display: block;
   position: absolute;
 
