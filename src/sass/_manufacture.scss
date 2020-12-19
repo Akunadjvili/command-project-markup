@@ -172,6 +172,8 @@
   :active {
     background: #ecebeb;
     cursor: pointer;
+    animation-duration: $trans-duration;
+    animation-timing-function: $trans-function;
   }
 
   &::after {
