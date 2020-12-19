@@ -1,11 +1,11 @@
-
 .comments-container {
- padding-top: 80px;
+  padding-top: 80px;
   padding-bottom: 50px;
-//  padding-bottom: 86px;
+  //  padding-bottom: 86px;
+  user-select: none;
 
   @media screen and(min-width: $tablet) and (max-width: 1199px) {
-    // max-width: 620px; 
+    // max-width: 620px;
     padding-top: 121px;
     // padding-bottom: 119px;
     padding-right: 0;
@@ -17,66 +17,139 @@
     // padding-bottom: 119px;
     padding-right: 0;
     padding-left: 0;
-  }  
-
+  }
 }
 .comments-slider {
- margin-left: auto;
- margin-right: auto;
-  
-@media screen and (max-width: 767px) {
-  width: 100%;
-}
-@media screen and (min-width: $tablet) and (max-width: 1199px) {
-  width: 620px; 
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: 620px;
+  }
+
+  @media screen and(min-width: $desktop) {
+    width: 926px;
+  }
 }
 
-@media screen and(min-width: $desktop) {
- width: 926px;
+.comment-slider-item {
+  outline: 1px solid transparent;
+  display: inline-block;
 }
+
+.comments-slick-dots {
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+
+.comments-slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.comments-slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.comments-slick-dots li button:hover,
+.comments-slick-dots li button:focus {
+  outline: none;
+}
+
+.comments-slick-dots li button:hover:before,
+.comments-slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.comments-slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  content: '';
+  background: url('../images/svg/circle-home.svg');
+  background-repeat: no-repeat;
+}
+
+.comments-slick-dots li.slick-active button:before {
+  width: 13px;
+  height: 12px;
+  background: url('../images/svg/home.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .comments-foto {
-margin-left: auto;
- margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
 }
 
 .comment-text-container {
- position: relative;
- z-index: -5;
- background-color: $alternate-bg-color;
+  position: relative;
+  z-index: -5;
+  background-color: $alternate-bg-color;
 
-@media screen and (max-width: 767px) {
-  margin-top: 29px;
- margin-bottom: 30px;
-}
-@media screen and (min-width: $tablet) and (max-width: 1199px) {
-  margin-top: 18px;
-  margin-bottom: 24px;
-}
+  @media screen and (max-width: 767px) {
+    margin-top: 29px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-top: 18px;
+    margin-bottom: 24px;
+  }
 
-@media screen and (min-width: $desktop) {
-
+  @media screen and (min-width: $desktop) {
     margin-top: 15px;
     margin-bottom: 15px;
-  } 
+  }
 }
 
 .comment-text {
   font-family: $primary-font;
-    font-weight: 500;
-    text-align: center;
-    line-height: 2.58;
-    letter-spacing: 0.04em;
-    color: $black;
+  font-weight: 500;
+  text-align: center;
+  line-height: 2.58;
+  letter-spacing: 0.04em;
+  color: $black;
 
-@media screen and (max-width: 767px) {
-    padding: 41px 50px 20px 50px;  
+  @media screen and (max-width: 767px) {
+    padding: 41px 50px 20px 50px;
     font-size: 12px;
-   line-height: 2;
+    line-height: 2;
   }
 
-@media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     // padding: 47px 3px 28px 0px;
     padding-top: 47px;
     padding-bottom: 28px;
@@ -87,12 +160,12 @@ margin-left: auto;
     // width: 544px;
   }
 
- @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     padding: 47px 89px 29px 67px;
 
-   font-size: 16px;
-   line-height: 1.875;
-  }  
+    font-size: 16px;
+    line-height: 1.875;
+  }
 }
 
 .comment-text-tablet {
@@ -100,11 +173,10 @@ margin-left: auto;
 }
 
 .comment-text-desktop {
-width: 813px;
+  width: 813px;
 }
- 
-.comment-dekor {
 
+.comment-dekor {
   position: absolute;
   display: block;
   top: 28px;
@@ -114,78 +186,77 @@ width: 813px;
   width: 54px;
   height: 40px;
 
-  // background-image: url("../images/svg/slick-bg.svg");
+  background-image: url('../images/svg/slick-bg.svg');
 
-    fill: $primary-decor-color;
+  fill: $primary-decor-color;
   background-repeat: no-repeat;
   background-size: contain;
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px){
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     top: 20%;
     left: 8%;
   }
 
- @media screen and(min-width: $desktop) {
-  top: 22%;
-  // left: 50px;
-  }  
+  @media screen and(min-width: $desktop) {
+    top: 22%;
+    // left: 50px;
+  }
 }
 
- @media screen  and (max-width: 767px) {
-   .comment-text-desktop,
-   .comment-text-tablet {
-     display: none; 
-   }
- }
+@media screen and (max-width: 767px) {
+  .comment-text-desktop,
+  .comment-text-tablet {
+    display: none;
+  }
+}
 
- @media screen  and (min-width: $desktop) {
-   .comment-text-mobile,
-   .comment-text-tablet {
-     display: none; 
-   }
- }
-
-@media screen  and (min-width: $tablet) and (max-width: 1199px) {
+@media screen and (min-width: $desktop) {
   .comment-text-mobile,
-   .comment-text-desktop {
-     display: none; 
+  .comment-text-tablet {
+    display: none;
+  }
 }
+
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+  .comment-text-mobile,
+  .comment-text-desktop {
+    display: none;
+  }
 }
- 
+
 .comment-dekorline {
   display: block;
-  
+
   border-bottom: 1px solid $primary-decor-color;
   max-width: 180px;
-  
-@media screen  and (min-width: $tablet) and (max-width: 1199px) {
-  max-width: 524px;
-}
-@media screen  and (min-width: $desktop) {
-  max-width: 813px;
-}
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    max-width: 524px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 813px;
+  }
 }
 
 .comment-dots {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    & .dot {
+  & .dot {
     width: 4px;
     height: 4px;
     border-radius: 50%;
     background-color: $smallcircle-decor-color;
- }
-    & .dot + .dot {
-        margin-left: 10px;
-    }
+  }
+  & .dot + .dot {
+    margin-left: 10px;
+  }
 }
-
 
 // .slider-dots {
 //     display: flex;
 //     justify-content: center;
-  
+
 //   & .comment-icon-home {
 //     width: 12.4px;
 //     height: 12px;
@@ -196,59 +267,57 @@ width: 813px;
 //     width: 12px;
 //     height: 12px;
 //     border-radius: 50%;
-//      background-color: $largecircle-decor-color;  
+//      background-color: $largecircle-decor-color;
 
-  
 //  }
 //     & .dot {
 //         margin-left: 18px;
 //     }
 // }
 
- .comment-local {
-    margin-top: 15px;
-    margin-bottom: 30px;
-    font-family: $primary-font;
-    font-weight: 500;
+.comment-local {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-family: $primary-font;
+  font-weight: 500;
 
-    line-height: 1.85;
-    text-align: center;
-    letter-spacing: 0.04em;
-   font-size: 14px;  
-   
-    @media screen and (min-width: $tablet) and (max-width: 1199px){
+  line-height: 1.85;
+  text-align: center;
+  letter-spacing: 0.04em;
+  font-size: 14px;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     margin-top: 14px;
     margin-bottom: 35px;
     font-size: 16px;
     line-height: 1.875;
   }
-   @media screen and(min-width: $desktop) {
+  @media screen and(min-width: $desktop) {
     margin-top: 12px;
     margin-bottom: 32px;
     font-size: 20px;
-  }    
+  }
 }
 
 .zaglushka-foto {
-   margin-left: auto;
- margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 85px;
   height: 85px;
   border-radius: 50%;
   background-color: crimson;
 }
 .zaglushka-home {
-   width: 12px;
+  width: 12px;
   height: 12px;
   border-radius: 50%;
   background-color: crimson;
 }
 
-
 // .comment-dekorline::after {
 //   content: '';
 //   display: block;
-  
+
 //   width: 180px;
 //   height: 1px;
 //   background-color:  $primary-decor-color;
@@ -271,13 +340,13 @@ width: 813px;
 
 // .comment-text-tablet {
 //   @media screen and (min-width: $desktop) and (max-width: 319px){
-//     display: none; 
+//     display: none;
 //   }
 // }
 
 // .comment-text-desktop {
 //   @media screen  and (max-width: 1199px) {
-//     display: none; 
+//     display: none;
 //   }
 // }
 
@@ -286,7 +355,7 @@ width: 813px;
 //   .comment-text-tablet {
 //     display: flex;
 //     flex-direction: column;
-//   } 
+//   }
 
 // .comment-text-container {
 //   display: flex;
