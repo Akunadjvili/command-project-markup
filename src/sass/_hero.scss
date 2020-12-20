@@ -94,7 +94,7 @@
   align-items: center;
   text-align: center;
 
-  margin-top: 19px;
+  margin-top: 25px;
   padding: 0;
   padding-left: 13px;
   padding-right: 13px;
@@ -151,8 +151,8 @@
   $trans-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 1200px) {
-    padding-left: 19px;
-    padding-right: 19px;
+    padding-left: 17px;
+    padding-right: 17px;
     font-size: 14px;
   }
 }
