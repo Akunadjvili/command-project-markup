@@ -167,11 +167,17 @@
   margin-left: 30px;
 
   &:hover,
+  &:focus,
   :active {
     background: #ecebeb;
     cursor: pointer;
     animation-duration: $trans-duration;
     animation-timing-function: $trans-function;
+  }
+
+  &:focus {
+    outline: 1px solid $primary-title-color;
+    outline-offset: 1px;
   }
 
   &::after {

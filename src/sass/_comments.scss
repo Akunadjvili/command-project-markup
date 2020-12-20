@@ -36,6 +36,10 @@
 .comment-slider-item {
   outline: 1px solid transparent;
   display: inline-block;
+  // &:focus {
+  //   outline: 1px solid $primary-title-color;
+  //   outline-offset: -1px;
+  // }
 }
 
 .comments-slick-dots {
@@ -45,7 +49,7 @@
   list-style: none;
   text-align: center;
   margin: 0;
- line-height: 0; 
+  line-height: 0;
 }
 
 .comments-slick-dots li {
@@ -56,10 +60,10 @@
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
-  
+
   padding: 0;
   cursor: pointer;
-  
+
   &:not(:last-child) {
     margin-right: 18px;
   }
@@ -79,9 +83,18 @@
   background: transparent;
 }
 
+// .comments-slick-dots li.slick-active button {
+//   width: 13px;
+//   height: 12px;
+// }
+
 .comments-slick-dots li button:hover,
 .comments-slick-dots li button:focus {
   outline: none;
+  // &:focus {
+  //   outline: 1px solid $primary-title-color;
+  //   outline-offset: 1px;
+  // }
 }
 
 .comments-slick-dots li button:hover:before,
@@ -144,7 +157,7 @@
   font-family: $primary-font;
   font-weight: 500;
   text-align: center;
-  
+
   letter-spacing: 0.04em;
   color: $black;
 
@@ -256,7 +269,7 @@
 
 .comment-local {
   margin-top: 18px;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 
   font-family: $primary-font;
   font-weight: 500;
