@@ -14,8 +14,7 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0);
-  overflow-x: hidden;
-  height: 100%;
+
   @media screen and(max-width: ($desktop - 1px)) {
     overflowx: hidden;
   }
