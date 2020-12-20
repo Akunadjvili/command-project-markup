@@ -59,14 +59,17 @@
   color: #ffffff;
 
   @media screen and (max-width: 767px) {
+    width: 218px;
     padding-left: 20px;
   }
   @media screen and (min-width: 768px) {
+    width: 162px;
     padding-top: 102px;
     font-size: 22px;
     margin-left: 35px;
   }
   @media screen and (min-width: 1200px) {
+    width: 240px;
     padding-top: 171px;
     font-size: 38px;
     margin-left: 75px;
@@ -267,7 +270,7 @@
   @media screen and (min-width: 1200px) {
     width: 72px;
     height: 77px;
-    left: 1055px;
+    left: 1082px;
     top: 156px;
 
     font-size: 46px;
@@ -301,7 +304,7 @@
   @media screen and (min-width: 1200px) {
     width: 96px;
     height: 76px;
-    left: 1038px;
+    left: 1065px;
     top: 248px;
     margin-top: 21px;
 
