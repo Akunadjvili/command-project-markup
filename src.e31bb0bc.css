@@ -104,12 +104,12 @@ input[type=radio].visually-hidden {
 
 .logo-site-nav {
   margin-top: 6px;
-  margin-bottom: 6px;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .logo-site-nav {
     margin-top: 37px;
-    margin-bottom: 37px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -120,6 +120,10 @@ input[type=radio].visually-hidden {
     margin-bottom: 35px;
     margin-right: 40px;
   }
+}
+.logo-site-nav:focus {
+  outline: 2px solid #d41443;
+  outline-offset: 5px;
 }
 
 .site-nav-list {
@@ -171,10 +175,18 @@ input[type=radio].visually-hidden {
 .btn-site-nav:focus {
   color: #d41443;
   background-color: #ecebeb;
-  outline: 2px solid #d41443;
-  outline-offset: 1px;
+  outline-color: #d41443;
 }
 
+@media screen and (max-width: 1200px) {
+  .btn-site-nav:hover,
+.btn-site-nav:focus {
+    color: #d41443;
+    background-color: #ecebeb;
+    outline: 2px solid #d41443;
+    outline-offset: 1px;
+  }
+}
 .container-btn-site-nav {
   display: flex;
   align-items: center;
@@ -205,6 +217,7 @@ input[type=radio].visually-hidden {
 .btn-icon-site-nav {
   margin-left: 16px;
   fill: rgba(0, 0, 0, 0);
+  stroke: #d41443;
 }
 @media screen and (min-width: 768px) {
   .btn-icon-site-nav {
@@ -237,8 +250,15 @@ input[type=radio].visually-hidden {
     margin-top: 0;
     margin-right: 0;
     margin-left: auto;
+    margin-top: 38px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .btn-site-nav-desktop {
+    margin-top: 0;
+  }
+}
+
 .btn-site-nav.mobile {
   display: block;
   margin-top: 24px;
