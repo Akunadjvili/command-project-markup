@@ -123,7 +123,7 @@
 .comment-text-container {
   position: relative;
   z-index: -2;
-  background-color: $alternate-bg-color;
+  background-color: $alternate-bg-col;
 
   @media screen and (max-width: 767px) {
     margin-top: 29px;
