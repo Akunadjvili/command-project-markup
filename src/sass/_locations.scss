@@ -1,3 +1,383 @@
+ul {
+  @extend %list;
+}
+
+.locations a {
+  @extend %link;
+}
+
+.locations h3,
+p {
+  margin: 0px;
+}
+.locations {
+  background-color: $secondary-bg-color;
+  padding-top: 36px;
+  padding-bottom: 113px;
+  background: linear-gradient(180deg, $white 10%, $secondary-bg-color 0);
+}
+
+@media screen and (min-width: $tablet) {
+  .locations {
+    padding-top: 69px;
+    padding-bottom: 158px;
+    background: linear-gradient(180deg, $white 18%, $secondary-bg-color 0);
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .locations {
+    padding-top: 82px;
+    padding-bottom: 165px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 31%;
+    background-color: $secondary-bg-color;
+
+    background-image: url('../images/locations/locations-bg.png'),
+      linear-gradient(180deg, $white 19%, $secondary-bg-color 0);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/locations/locations-bg@2x.png'),
+        linear-gradient(180deg, $white 19%, $secondary-bg-color 0);
+    }
+  }
+}
+// --------------------------------------------
+
+@media screen and (min-width: $tablet) {
+  .locations-card-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+.locations-card-item {
+  background: $white;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+@media screen and (max-width: $tablet - 1) {
+  .locations-card-item {
+    width: 220px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 43px 21px 43px 20px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .locations-card-item {
+    flex-basis: calc((100% - 40px) / 3);
+    margin-right: 20px;
+    padding: 50px 32px 50px 31px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .locations-card-item {
+    flex-basis: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    padding: 51px 44px 62px 43px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+.locations-restaurant {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  text-transform: uppercase;
+
+  min-width: 80px;
+  margin-bottom: 25px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: $white;
+  background-color: $primary-overlay-decor-color;
+  border-radius: 4px;
+
+  &.locations-ftruck {
+    background-color: $secondary-overlay-decor-color;
+    min-width: 130px;
+  }
+}
+
+@media screen and (max-width: $tablet - 1) {
+  .locations-restaurant {
+    height: 16px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .locations-restaurant {
+    font-size: 16px;
+
+    display: inline-flex;
+    margin-bottom: 28px;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 73px;
+    height: 28px;
+
+    &.locations-ftruck {
+      min-width: 138px;
+    }
+  }
+}
+
+.locations-card-item h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: $black;
+}
+
+@media screen and (min-width: $tablet) {
+  .locations-card-item h3 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .locations-card-item h3 {
+    font-size: 16px;
+  }
+}
+// --------------------------------
+.locations-card-item > h3 {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: $desktop - 1) and (min-width: $tablet) {
+  .locations-card-item > h3 {
+    margin-bottom: 14px;
+  }
+}
+
+.locations-description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: $alternate-text-color;
+
+  border-bottom: 1px solid $primary-decor-color;
+  padding-bottom: 24px;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: $tablet) {
+  .locations-description {
+    font-size: 14px;
+    line-height: 1.66;
+    letter-spacing: 0.04em;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .locations-description {
+    font-size: 16px;
+    line-height: 1.83;
+    padding-bottom: 31px;
+    margin-bottom: 24px;
+    letter-spacing: 0.02em;
+  }
+}
+// --------------------------------------------------
+.locations-card-item .locations-workdays {
+  margin-bottom: -2px;
+}
+
+.locations-worktime {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: $secondary-title-color;
+}
+
+@media screen and (min-width: $tablet) {
+  .locations-worktime {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .locations-worktime {
+    font-size: 16px;
+  }
+}
+
+// -----------------------------------
+
+.locations-work-list {
+  border-bottom: 1px solid $primary-decor-color;
+  padding-bottom: 24px;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: $tablet) {
+  .locations-work-list {
+    padding-bottom: 29px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .locations-work-list {
+    padding-bottom: 31px;
+    margin-bottom: 32px;
+  }
+}
+// --------------------------------------
+
+.locations-work-list > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: $tablet) {
+  .locations-work-list > li:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .locations-work-list > li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+// ----------------------------------------
+
+.locations-contact-list a {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+
+  color: #907e82;
+}
+
+@media screen and (min-width: $tablet) {
+  .locations-contact-list a {
+    font-size: 14px;
+    line-height: 1.83;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .locations-contact-list a {
+    font-size: 16px;
+  }
+}
+// -----------------------------------------
+
+.locations-button-group {
+  text-align: center;
+  margin-top: 54px;
+}
+
+@media screen and (min-width: $tablet) {
+  .locations-button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 81px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .locations-button-group {
+    margin-top: 86px;
+  }
+}
+
+// ------------------------------------------------
+
+.locations-button {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $white;
+
+  width: 161.45px;
+  height: 44px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $primary-accent-color;
+  border-radius: 22px;
+  border: none;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &.locations-franchise {
+    background-color: $white;
+    color: $primary-title-color;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .locations-button {
+    margin: 0px;
+    &:not(:last-child) {
+      margin-bottom: 0px;
+      margin-right: 15px;
+    }
+  }
+}
+// ---------------------------------
+
+.location-button-icon {
+  fill: $white;
+  width: 8px;
+  height: 10px;
+  margin-left: 8px;
+
+  &.location-button-iconfr {
+    margin-left: 13px;
+  }
+}
+
 //пример для фона загрузки разных размеров и плотностей
 // body {
 //   @media screen and(max-width: $tablet - 1) {
