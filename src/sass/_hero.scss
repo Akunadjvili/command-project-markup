@@ -33,7 +33,7 @@
     background-image: url(../images/hero/tablet/baby.png),
       url(../images/hero/tablet/ice-cream.png),
       url(../images/hero/tablet/milk.png);
-    background-position: bottom right 5%, bottom right 30%, bottom 10% left 0%;
+    background-position: bottom right 5%, bottom right 30%, bottom 10% left 6%;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
@@ -41,7 +41,7 @@
     background-image: url(../images/hero/desktop/baby.png),
       url(../images/hero/desktop/ice-cream.png),
       url(../images/hero/desktop/milk.png);
-    background-position: bottom right 12%, bottom right 42%, bottom 10% left 0%;
+    background-position: bottom right 4%, bottom right 30%, bottom 10% left 3%;
   }
 }
 .container {
@@ -64,10 +64,12 @@
   @media screen and (min-width: 768px) {
     padding-top: 102px;
     font-size: 22px;
+    margin-left: 35px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 171px;
     font-size: 38px;
+    margin-left: 75px;
   }
 }
 .hero__title__text {
@@ -142,8 +144,8 @@
   list-style: none;
 
   border-color: transparent;
-  outline: none;
   color: #d41443;
+  outline-color: #ffffff;
 
   $trans-duration: 250ms;
   $trans-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -160,9 +162,11 @@
   }
   @media screen and (min-width: 768px) {
     margin-right: 4px;
+    margin-left: 35px;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 15px;
+    margin-left: 75px;
   }
 }
 .anchor__link:hover {
@@ -176,14 +180,14 @@
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
-    left: 120px;
+    left: 160px;
     top: 292px;
 
     width: 124px;
     height: 48px;
   }
   @media screen and (min-width: 1200px) {
-    left: 180px;
+    left: 250px;
     top: 485px;
 
     width: 203px;
@@ -249,7 +253,7 @@
   @media screen and (min-width: 1200px) {
     width: 72px;
     height: 77px;
-    left: 1011px;
+    left: 1055px;
     top: 156px;
 
     font-size: 46px;
@@ -283,7 +287,7 @@
   @media screen and (min-width: 1200px) {
     width: 96px;
     height: 76px;
-    left: 992px;
+    left: 1038px;
     top: 248px;
     margin-top: 21px;
 
