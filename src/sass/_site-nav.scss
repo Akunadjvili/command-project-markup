@@ -176,14 +176,14 @@
     width: 254px;
     height: 399px;
   }
-
-  @media screen and(min-width: $desktop) {
-    display: none;
-  }
 }
 
 .mobile-nav-site-nav.is-open {
   display: block;
+
+  @include for-size(desktop) {
+    display: none;
+  }
 }
 
 .burger-menu-site-nav {
