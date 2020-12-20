@@ -49,6 +49,7 @@
 .hero__title {
   margin: 0;
   padding-top: 193px;
+
   font-family: Titan One;
   font-style: normal;
   font-weight: 400;
@@ -57,6 +58,9 @@
   text-transform: uppercase;
   color: #ffffff;
 
+  @media screen and (max-width: 767px) {
+    padding-left: 20px;
+  }
   @media screen and (min-width: 768px) {
     padding-top: 102px;
     font-size: 22px;
@@ -82,6 +86,8 @@
   }
 }
 .hero__button {
+}
+.anchor__link {
   display: inline-flex;
   align-items: center;
   text-align: center;
@@ -96,18 +102,6 @@
   outline-color: white;
   background: #d41443;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media screen and (min-width: 1200px) {
-    height: 40px;
-    padding-left: 19px;
-    padding-right: 19px;
-
-    font-size: 14px;
-  }
-}
-.anchor__link__products {
   list-style: none;
   font-family: DM Sans;
   font-style: normal;
@@ -117,17 +111,28 @@
   text-decoration: none;
 
   color: #ffffff;
-  border-color: transparent;
-  outline: none;
 
   $trans-duration: 250ms;
   $trans-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 1200px) {
+    height: 40px;
+    padding-left: 19px;
+    padding-right: 19px;
+
     font-size: 14px;
   }
 }
-.anchor__link__recipe {
+.anchor__link.recipe {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+
+  background: #ffffff;
+  outline-color: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   font-family: DM Sans;
   font-style: normal;
   font-weight: 400;
@@ -144,10 +149,15 @@
   $trans-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 1200px) {
+    padding-left: 19px;
+    padding-right: 19px;
     font-size: 14px;
   }
 }
-.hero__button.products {
+.anchor__link.products {
+  @media screen and (max-width: 767px) {
+    margin-left: 20px;
+  }
   @media screen and (min-width: 768px) {
     margin-right: 4px;
   }
@@ -155,24 +165,10 @@
     margin-right: 15px;
   }
 }
-.hero__button:hover {
+.anchor__link:hover {
   background: #c7133e;
 }
-.hero__button.recipe {
-  padding-left: 15px;
-  padding-right: 15px;
-
-  background: #ffffff;
-  outline-color: #ffffff;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media screen and (min-width: 1200px) {
-    padding-left: 19px;
-    padding-right: 19px;
-  }
-}
-.hero__button.recipe:hover {
+.anchor__link.recipe:hover {
   background: #ecebeb;
 }
 .hero__text__box {
@@ -194,7 +190,7 @@
     height: 78px;
   }
 }
-.hero__text__box::after {
+.svg__link {
   display: inline-block;
   position: absolute;
   content: '';
@@ -247,6 +243,9 @@
 
   color: #d41443;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   @media screen and (min-width: 1200px) {
     width: 72px;
     height: 77px;
@@ -278,6 +277,9 @@
 
   color: #d41443;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   @media screen and (min-width: 1200px) {
     width: 96px;
     height: 76px;

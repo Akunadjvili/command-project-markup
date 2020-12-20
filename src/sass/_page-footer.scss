@@ -45,7 +45,7 @@
     }
     background-color: $secondary-bg-color;
 }
-.section-title{
+.f-section-title{
     
     margin: 0;
     padding: 0;
@@ -70,11 +70,11 @@
     }
 
 }
-.ul-title{
+.f-ul-title{
     margin: 0;
     padding: 0;
 }
-.homemade-text{
+.f-homemade-text{
     @extend %list;
     @include for-size(mobile){     
         font-size: 18px;
@@ -100,7 +100,7 @@
     text-transform: uppercase;
     color: $secondary-title-color;
 }
-.passion-text {
+.f-passion-text {
     @extend %list;
     @include for-size(mobile){
         font-size: 34px;
@@ -121,7 +121,7 @@
 
 
 }
-.container-footer{
+.f-container-footer{
     display: flex;
     @include for-size(mobile){
         flex-direction: column;
@@ -135,14 +135,14 @@
         justify-content: space-between;
     }
 }
-.section-icon{
+.f-section-icon{
     text-align: right;
 }
-.color-tel{
+.f-color-tel{
     color: $primary-title-color;
     text-decoration: none;
 }
-.phone{
+.f-phone{
     display: inline-block;
     margin-top: 46px ;
     font-family: $primary-font;
@@ -166,12 +166,12 @@
     }
     
 }
-.ul-icon{
+.f-ul-icon{
     display: inline-flex;
     padding: 0;
     margin: 0;
 }
-.item-icon{
+.f-item-icon{
     @extend %list;
     &:last-child{
         margin-left: 25px;
@@ -185,13 +185,13 @@
 
 }
 
-.contacts-icon-svg{
+.f-contacts-icon-svg{
     width: 19px;
     height: 19px;
     fill: $white;
 }
 
-.contacts-icon-link{
+.f-contacts-icon-link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,7 +219,7 @@
 }
 
 // стили подписи футера
-.section-reserved{
+.f-section-reserved{
     display: flex;
     background-color: $secondary-bg-color;
     border-top: 1px solid $primary-decor-color;
@@ -240,7 +240,7 @@
     }
  
 }
-.reserved{
+.f-reserved{
     font-family: $primary-font;
     color: $alternate-text-color;
     font-style: normal;
