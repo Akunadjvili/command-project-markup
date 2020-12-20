@@ -33,7 +33,7 @@
     background-image: url(../images/hero/tablet/baby.png),
       url(../images/hero/tablet/ice-cream.png),
       url(../images/hero/tablet/milk.png);
-    background-position: bottom right 5%, bottom right 30%, bottom 10% left 6%;
+    background-position: bottom right 5%, bottom right 31%, bottom 10% left 6%;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
@@ -94,7 +94,7 @@
   align-items: center;
   text-align: center;
 
-  margin-top: 19px;
+  margin-top: 25px;
   padding: 0;
   padding-left: 13px;
   padding-right: 13px;
@@ -151,8 +151,8 @@
   $trans-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 1200px) {
-    padding-left: 19px;
-    padding-right: 19px;
+    padding-left: 17px;
+    padding-right: 17px;
     font-size: 14px;
   }
 }
@@ -235,7 +235,7 @@
   position: absolute;
   width: 43px;
   height: 44px;
-  left: 691px;
+  left: 680px;
   top: 94px;
 
   font-family: Titan One;
@@ -268,7 +268,7 @@
   position: absolute;
   width: 56px;
   height: 43px;
-  left: 683px;
+  left: 674px;
   top: 151px;
   margin-top: 13px;
 
