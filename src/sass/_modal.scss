@@ -143,7 +143,7 @@
   max-width: 100%;
   max-height: 100%;
   width: 18px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill $trans-duration $trans-function;
 }
 
 .price {
@@ -168,7 +168,7 @@
   border-radius: 22px;
   margin: 0 auto;
   margin-bottom: 25px;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background $trans-duration $trans-function;
 
 
   &:hover {
@@ -191,5 +191,5 @@
   border: none;
   color: $white;
   text-transform: uppercase;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color $trans-duration $trans-function;
 }
