@@ -101,14 +101,16 @@
 .btn-site-nav:focus {
   color: $primary-title-color;
   background-color: $secondary-accent-color;
-  outline-color: $primary-title-color;
+}
+
+@media screen and(min-width: 1200px) {
+  .btn-site-nav:focus {
+    outline: 2px solid $primary-title-color;
+  }
 }
 
 @media screen and(max-width: 1200px) {
-  .btn-site-nav:hover,
   .btn-site-nav:focus {
-    color: $primary-title-color;
-    background-color: $secondary-accent-color;
     outline: 2px solid $primary-title-color;
     outline-offset: 1px;
   }
