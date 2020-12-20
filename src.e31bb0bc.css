@@ -87,7 +87,6 @@ input[type=radio].visually-hidden {
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0);
-  z-index: 1000;
 }
 @media screen and (max-width: 1199px) {
   .site-nav {
@@ -272,7 +271,6 @@ input[type=radio].visually-hidden {
   box-sizing: content-box;
   width: 20px;
   height: 16px;
-  z-index: 1003;
   background-color: rgba(0, 0, 0, 0);
   padding-left: 0;
   padding-right: 0;
@@ -317,6 +315,12 @@ input[type=radio].visually-hidden {
   .burger-menu-site-nav.is-open {
     top: 24px;
     right: 34px;
+    z-index: 2;
+  }
+}
+@media screen {
+  .burger-menu-site-nav.is-open {
+    right: 0;
   }
 }
 .burger-menu-site-nav > span,
@@ -403,7 +407,7 @@ input[type=radio].visually-hidden {
     width: 768px;
     height: 400px;
     background-image: url(/baby.ea28b643.png), url(/ice-cream.94078148.png), url(/milk.7a2abee1.png);
-    background-position: bottom right 5%, bottom right 30%, bottom 10% left 0%;
+    background-position: bottom right 5%, bottom right 31%, bottom 10% left 6%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -411,7 +415,7 @@ input[type=radio].visually-hidden {
     width: 1200px;
     height: 665px;
     background-image: url(/baby.129ecb88.png), url(/ice-cream.9cb4e14d.png), url(/milk.e65f588e.png);
-    background-position: bottom right 12%, bottom right 42%, bottom 10% left 0%;
+    background-position: bottom right 4%, bottom right 30%, bottom 10% left 3%;
   }
 }
 
@@ -435,12 +439,14 @@ input[type=radio].visually-hidden {
   .hero__title {
     padding-top: 102px;
     font-size: 22px;
+    margin-left: 35px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
     padding-top: 171px;
     font-size: 38px;
+    margin-left: 75px;
   }
 }
 
@@ -467,7 +473,7 @@ input[type=radio].visually-hidden {
   display: inline-flex;
   align-items: center;
   text-align: center;
-  margin-top: 19px;
+  margin-top: 25px;
   padding: 0;
   padding-left: 13px;
   padding-right: 13px;
@@ -510,13 +516,13 @@ input[type=radio].visually-hidden {
   text-decoration: none;
   list-style: none;
   border-color: transparent;
-  outline: none;
   color: #d41443;
+  outline-color: #ffffff;
 }
 @media screen and (min-width: 1200px) {
   .anchor__link.recipe {
-    padding-left: 19px;
-    padding-right: 19px;
+    padding-left: 17px;
+    padding-right: 17px;
     font-size: 14px;
   }
 }
@@ -529,11 +535,13 @@ input[type=radio].visually-hidden {
 @media screen and (min-width: 768px) {
   .anchor__link.products {
     margin-right: 4px;
+    margin-left: 35px;
   }
 }
 @media screen and (min-width: 1200px) {
   .anchor__link.products {
     margin-right: 15px;
+    margin-left: 75px;
   }
 }
 
@@ -552,7 +560,7 @@ input[type=radio].visually-hidden {
   .hero__text__box {
     display: block;
     position: absolute;
-    left: 120px;
+    left: 160px;
     top: 292px;
     width: 124px;
     height: 48px;
@@ -560,7 +568,7 @@ input[type=radio].visually-hidden {
 }
 @media screen and (min-width: 1200px) {
   .hero__text__box {
-    left: 180px;
+    left: 250px;
     top: 485px;
     width: 203px;
     height: 78px;
@@ -609,7 +617,7 @@ input[type=radio].visually-hidden {
   position: absolute;
   width: 43px;
   height: 44px;
-  left: 691px;
+  left: 680px;
   top: 94px;
   font-family: Titan One;
   font-style: normal;
@@ -628,7 +636,7 @@ input[type=radio].visually-hidden {
   .hero__text.cafe {
     width: 72px;
     height: 77px;
-    left: 1011px;
+    left: 1055px;
     top: 156px;
     font-size: 46px;
     line-height: 53px;
@@ -643,7 +651,7 @@ input[type=radio].visually-hidden {
   position: absolute;
   width: 56px;
   height: 43px;
-  left: 683px;
+  left: 674px;
   top: 151px;
   margin-top: 13px;
   font-family: Titan One;
@@ -663,7 +671,7 @@ input[type=radio].visually-hidden {
   .hero__text.truck {
     width: 96px;
     height: 76px;
-    left: 992px;
+    left: 1038px;
     top: 248px;
     margin-top: 21px;
     font-size: 46px;
@@ -1479,7 +1487,7 @@ input[type=radio].visually-hidden {
 .comment-text-container {
   position: relative;
   z-index: -2;
-  background-color: #fafafa;
+  background-color: #FDFDFD;
 }
 @media screen and (max-width: 767px) {
   .comment-text-container {
