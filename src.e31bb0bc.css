@@ -83,7 +83,7 @@ input[type=radio].visually-hidden {
 
 .site-nav {
   position: absolute;
-  z-index: 1000;
+  z-index: 1500;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -192,6 +192,16 @@ input[type=radio].visually-hidden {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .burger-menu-site-nav.is-open.container-btn-site-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .burger-menu-site-nav.is-open.container-btn-site-nav {
+    display: none;
+  }
+}
 .btn-icon-site-nav {
   margin-left: 16px;
   fill: rgba(0, 0, 0, 0);
@@ -564,12 +574,24 @@ input[type=radio].visually-hidden {
   }
 }
 
-.anchor__link:hover {
+.anchor__link:hover,
+.anchor__link:focus {
   background: #c7133e;
 }
 
-.anchor__link.recipe:hover {
+.anchor__link.recipe:hover,
+.anchor__link.recipe:focus {
   background: #ecebeb;
+}
+
+.anchor__link:focus {
+  outline: 1px solid #d41443;
+  outline-offset: 1px;
+}
+
+.anchor__link.focus:hover {
+  outline: 1px solid #d41443;
+  outline-offset: 1px;
 }
 
 .hero__text__box {
@@ -611,6 +633,10 @@ input[type=radio].visually-hidden {
     margin-top: 20px;
     background-image: url(/arrow-right.7a9f24fa.jpg);
   }
+}
+.svg__link:focus {
+  outline: 1px solid #d41443;
+  outline-offset: 1px;
 }
 
 .hero__text {
