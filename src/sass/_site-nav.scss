@@ -64,7 +64,10 @@
 
   color: $primary-text-color;
 
-  &:hover,
+  &:focus {
+    outline: 2px solid #d41443;
+    outline-offset: 1px;
+  }
   &:hover {
     color: $primary-title-color;
   }
@@ -93,6 +96,8 @@
 .btn-site-nav:focus {
   color: $primary-title-color;
   background-color: $secondary-accent-color;
+  outline: 2px solid #d41443;
+  outline-offset: 1px;
 }
 
 .container-btn-site-nav {
@@ -200,9 +205,13 @@
   padding-left: 0;
   padding-right: 0;
 
-  &:hover,
   &:focus {
     background-color: rgba(0, 0, 0, 0);
+  }
+
+  &:focus {
+    outline: 2px solid #d41443;
+    outline-offset: 5px;
   }
 
   @media screen and(min-width: $tablet) {
@@ -278,6 +287,11 @@
   margin-left: 21px;
   @media screen and(min-width: $tablet) {
     margin-left: 24px;
+
+    &:focus {
+      outline: 2px solid #d41443;
+      outline-offset: 5px;
+    }
   }
 }
 
@@ -293,9 +307,12 @@
   line-height: 1.286;
   color: $primary-text-color;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: #d41443;
+  }
+  &:focus {
+    outline: 2px solid #d41443;
+    outline-offset: 5px;
   }
 }
 
