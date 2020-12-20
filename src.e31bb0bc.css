@@ -88,6 +88,8 @@ input[type=radio].visually-hidden {
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
+  height: 100%;
 }
 @media screen and (max-width: 1199px) {
   .site-nav {
@@ -482,11 +484,13 @@ input[type=radio].visually-hidden {
 }
 @media screen and (max-width: 767px) {
   .hero__title {
+    width: 218px;
     padding-left: 20px;
   }
 }
 @media screen and (min-width: 768px) {
   .hero__title {
+    width: 162px;
     padding-top: 102px;
     font-size: 22px;
     margin-left: 35px;
@@ -494,6 +498,7 @@ input[type=radio].visually-hidden {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
+    width: 240px;
     padding-top: 171px;
     font-size: 38px;
     margin-left: 75px;
@@ -708,7 +713,7 @@ input[type=radio].visually-hidden {
   .hero__text.cafe {
     width: 72px;
     height: 77px;
-    left: 1055px;
+    left: 1082px;
     top: 156px;
     font-size: 46px;
     line-height: 53px;
@@ -743,7 +748,7 @@ input[type=radio].visually-hidden {
   .hero__text.truck {
     width: 96px;
     height: 76px;
-    left: 1038px;
+    left: 1065px;
     top: 248px;
     margin-top: 21px;
     font-size: 46px;
@@ -1738,14 +1743,14 @@ p {
   background-color: #fff5f6;
   padding-top: 36px;
   padding-bottom: 113px;
-  background: linear-gradient(180deg, #ffffff 10%, #fff5f6 0);
+  background: linear-gradient(180deg, #ffffff 120px, #fff5f6 0);
 }
 
 @media screen and (min-width: 768px) {
   .locations {
     padding-top: 69px;
     padding-bottom: 158px;
-    background: linear-gradient(180deg, #ffffff 18%, #fff5f6 0);
+    background: linear-gradient(180deg, #ffffff 147px, #fff5f6 0);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1756,12 +1761,12 @@ p {
     background-repeat: no-repeat;
     background-position-y: 31%;
     background-color: #fff5f6;
-    background-image: url("/locations-bg.50b0968c.png"), linear-gradient(180deg, #ffffff 19%, #fff5f6 0);
+    background-image: url("/locations-bg.50b0968c.png"), linear-gradient(180deg, #ffffff 184px, #fff5f6 0);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .locations {
-    background-image: url("/locations-bg@2x.9ea3a496.png"), linear-gradient(180deg, #ffffff 19%, #fff5f6 0);
+    background-image: url("/locations-bg@2x.9ea3a496.png"), linear-gradient(180deg, #ffffff 184px, #fff5f6 0);
   }
 }
 @media screen and (min-width: 768px) {
@@ -1980,7 +1985,7 @@ p {
 @media screen and (min-width: 768px) {
   .locations-contact-list a {
     font-size: 14px;
-    line-height: 1.83;
+    line-height: 1.75;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2075,8 +2080,8 @@ p {
 .location-button-icon {
   stroke: #ffffff;
   fill: #d41342;
-  width: 8px;
-  height: 10px;
+  width: 14px;
+  height: 12px;
   margin-left: 8px;
 }
 .location-button-icon.location-button-iconfr {
