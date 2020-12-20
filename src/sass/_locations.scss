@@ -336,7 +336,7 @@ p {
   text-align: center;
   color: $white;
 
-  width: 161.45px;
+  width: 161px;
   height: 44px;
 
   margin-left: auto;
@@ -353,9 +353,38 @@ p {
   &.locations-franchise {
     background-color: $white;
     color: $primary-title-color;
+    &:hover,
+    &:focus {
+      background-color: $secondary-accent-color;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &.locations-button:hover,
+  &.locations-button:focus {
+    cursor: pointer;
   }
 }
 
+@media screen and (min-width: $tablet) {
+  .locations-button {
+    width: 192px;
+
+    &.locations-franchise {
+      width: 174px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .locations-button {
+    width: 198px;
+
+    &.locations-franchise {
+      width: 180px;
+    }
+  }
+}
+// ----------------------------------------------------
 @media screen and (min-width: $tablet) {
   .locations-button {
     margin: 0px;
@@ -368,12 +397,15 @@ p {
 // ---------------------------------
 
 .location-button-icon {
-  fill: $white;
+  stroke: $white;
+  fill: $primary-accent-color;
   width: 8px;
   height: 10px;
   margin-left: 8px;
 
   &.location-button-iconfr {
     margin-left: 13px;
+    stroke: $primary-accent-color;
+    fill: $white;
   }
 }
