@@ -58,8 +58,8 @@ $desktop: 1200px;
   }
   @media screen and(min-width: $desktop) {
     width: $desktop;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 75px;
+    padding-right: 75px;
     //в резульате ширина контейнера 1050px
   }
 }

@@ -12,7 +12,7 @@ p {
 }
 .locations {
   background-color: $secondary-bg-color;
-  padding-top: 82px;
+  padding-top: 36px;
   padding-bottom: 113px;
   background: linear-gradient(180deg, $white 10%, $secondary-bg-color 0);
 }
@@ -24,6 +24,29 @@ p {
     background: linear-gradient(180deg, $white 18%, $secondary-bg-color 0);
   }
 }
+
+@media screen and (min-width: $desktop) {
+  .locations {
+    padding-top: 82px;
+    padding-bottom: 165px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 31%;
+    background-color: $secondary-bg-color;
+
+    background-image: url('../images/locations/locations-bg.png'),
+      linear-gradient(180deg, $white 19%, $secondary-bg-color 0);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/locations/locations-bg@2x.png'),
+        linear-gradient(180deg, $white 19%, $secondary-bg-color 0);
+    }
+  }
+}
+// --------------------------------------------
 
 @media screen and (min-width: $tablet) {
   .locations-card-list {
@@ -60,6 +83,18 @@ p {
     flex-basis: calc((100% - 40px) / 3);
     margin-right: 20px;
     padding: 50px 32px 50px 31px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .locations-card-item {
+    flex-basis: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    padding: 51px 44px 62px 43px;
 
     &:last-child {
       margin-right: 0px;
@@ -104,10 +139,11 @@ p {
     font-size: 16px;
 
     display: inline-flex;
-    margin-bottom: 30px;
-    padding-left: 16px;
-    padding-right: 16px;
+    margin-bottom: 28px;
+    padding-left: 15px;
+    padding-right: 15px;
     min-width: 73px;
+    height: 28px;
 
     &.locations-ftruck {
       min-width: 138px;
@@ -163,7 +199,7 @@ p {
     font-size: 14px;
     line-height: 1.66;
     letter-spacing: 0.04em;
-    padding-bottom: 29px;
+    padding-bottom: 25px;
     margin-bottom: 30px;
   }
 }
@@ -173,7 +209,8 @@ p {
     font-size: 16px;
     line-height: 1.83;
     padding-bottom: 31px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+    letter-spacing: 0.02em;
   }
 }
 // --------------------------------------------------
