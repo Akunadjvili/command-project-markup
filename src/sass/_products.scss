@@ -265,9 +265,12 @@
 
   &:hover,
   &:focus {
-    border: 1px solid $primary-title-color;
-    outline: 1px $primary-title-color;
+    // border: 1px solid $primary-title-color;
     cursor: pointer;
+  }
+  &:focus {
+    outline: 1px solid $primary-title-color;
+    outline-offset: 1px;
   }
 
   @media screen and (min-width: 768px) {

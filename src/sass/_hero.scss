@@ -114,9 +114,6 @@
 
   color: #ffffff;
 
-  $trans-duration: 250ms;
-  $trans-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   @media screen and (min-width: 1200px) {
     height: 40px;
     padding-left: 19px;
@@ -132,8 +129,8 @@
 
   background: #ffffff;
   outline-color: #ffffff;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $trans-duration;
+  transition-timing-function: $trans-function;
 
   font-family: DM Sans;
   font-style: normal;
@@ -146,9 +143,6 @@
   border-color: transparent;
   color: #d41443;
   outline-color: #ffffff;
-
-  $trans-duration: 250ms;
-  $trans-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 1200px) {
     padding-left: 17px;
