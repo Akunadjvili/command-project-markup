@@ -3,7 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   z-index: 1000;
-  background-color: #ffb8ca;
+  background-color: $header-bg-color;
 
   @media screen and (max-width: 767px) {
     width: 320px;
@@ -87,8 +87,7 @@
     font-size: 58px;
   }
 }
-.hero__button {
-}
+
 .anchor__link {
   display: inline-flex;
   align-items: center;
@@ -114,9 +113,6 @@
 
   color: #ffffff;
 
-  $trans-duration: 250ms;
-  $trans-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   @media screen and (min-width: 1200px) {
     height: 40px;
     padding-left: 19px;
@@ -132,8 +128,8 @@
 
   background: #ffffff;
   outline-color: #ffffff;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $trans-duration;
+  transition-timing-function: $trans-function;
 
   font-family: DM Sans;
   font-style: normal;
@@ -147,16 +143,13 @@
   color: #d41443;
   outline-color: #ffffff;
 
-  $trans-duration: 250ms;
-  $trans-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   @media screen and (min-width: 1200px) {
     padding-left: 17px;
     padding-right: 17px;
     font-size: 14px;
   }
 }
-.anchor__link.products {
+.anchor__link.hero-products {
   @media screen and (max-width: 767px) {
     margin-left: 20px;
   }
@@ -169,12 +162,25 @@
     margin-left: 75px;
   }
 }
-.anchor__link:hover {
-  background: #c7133e;
+.anchor__link:hover,
+.anchor__link:focus {
+  background: $smallcircle-decor-color;
 }
-.anchor__link.recipe:hover {
-  background: #ecebeb;
+
+.anchor__link.recipe:hover,
+.anchor__link.recipe:focus {
+  background: $secondary-accent-color;
 }
+
+.anchor__link:focus {
+  outline: 1px solid $primary-title-color;
+  outline-offset: 1px;
+}
+.anchor__link.focus:hover {
+  outline: 1px solid $primary-title-color;
+  outline-offset: 1px;
+}
+
 .hero__text__box {
   display: none;
   @media screen and (min-width: 768px) {
@@ -210,6 +216,11 @@
     height: 26px;
     margin-top: 20px;
     background-image: url(../images/hero/desktop/arrow-right.jpg);
+  }
+
+  &:focus {
+    outline: 1px solid $primary-title-color;
+    outline-offset: 1px;
   }
 }
 .hero__text {

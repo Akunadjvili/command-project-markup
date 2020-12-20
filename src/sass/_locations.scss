@@ -287,6 +287,11 @@ p {
   line-height: 1.5;
 
   color: #907e82;
+
+  &:focus {
+    outline: 1px solid $primary-title-color;
+    outline-offset: 1px;
+  }
 }
 
 @media screen and (min-width: $tablet) {
@@ -358,10 +363,18 @@ p {
       background-color: $secondary-accent-color;
       transition: background-color $trans-duration $trans-function;
     }
+    &:focus {
+      outline: 1px solid $primary-title-color;
+      outline-offset: 1px;
+    }
   }
   &.locations-button:hover,
   &.locations-button:focus {
     cursor: pointer;
+  }
+  &.locations-button:focus {
+    outline: 1px solid $primary-title-color;
+    outline-offset: 1px;
   }
 }
 
