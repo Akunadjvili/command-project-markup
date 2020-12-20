@@ -9,7 +9,7 @@
 }
 .site-nav {
   position: absolute;
-  z-index: 1000;
+  z-index: 1500;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -112,6 +112,18 @@
   border-radius: 22px;
   @media screen and(min-width: $tablet) {
     width: 186px;
+  }
+}
+
+@media screen and(min-width: $tablet) {
+  .burger-menu-site-nav.is-open.container-btn-site-nav {
+    display: none;
+  }
+}
+
+@media screen and(min-width: $tablet) {
+  .burger-menu-site-nav.is-open.container-btn-site-nav {
+    display: none;
   }
 }
 
