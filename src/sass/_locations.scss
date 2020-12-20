@@ -14,14 +14,14 @@ p {
   background-color: $secondary-bg-color;
   padding-top: 36px;
   padding-bottom: 113px;
-  background: linear-gradient(180deg, $white 10%, $secondary-bg-color 0);
+  background: linear-gradient(180deg, $white 120px, $secondary-bg-color 0);
 }
 
 @media screen and (min-width: $tablet) {
   .locations {
     padding-top: 69px;
     padding-bottom: 158px;
-    background: linear-gradient(180deg, $white 18%, $secondary-bg-color 0);
+    background: linear-gradient(180deg, $white 147px, $secondary-bg-color 0);
   }
 }
 
@@ -36,13 +36,13 @@ p {
     background-color: $secondary-bg-color;
 
     background-image: url('../images/locations/locations-bg.png'),
-      linear-gradient(180deg, $white 19%, $secondary-bg-color 0);
+      linear-gradient(180deg, $white 184px, $secondary-bg-color 0);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       background-image: url('../images/locations/locations-bg@2x.png'),
-        linear-gradient(180deg, $white 19%, $secondary-bg-color 0);
+        linear-gradient(180deg, $white 184px, $secondary-bg-color 0);
     }
   }
 }
@@ -412,8 +412,8 @@ p {
 .location-button-icon {
   stroke: $white;
   fill: $primary-accent-color;
-  width: 8px;
-  height: 10px;
+  width: 14px;
+  height: 12px;
   margin-left: 8px;
 
   &.location-button-iconfr {
