@@ -29,10 +29,11 @@
 
 .logo-site-nav {
   margin-top: 6px;
-  margin-bottom: 6px;
+  margin-bottom: 0;
+
   @media screen and(min-width: $tablet) {
     margin-top: 37px;
-    margin-bottom: 37px;
+    margin-bottom: 0;
   }
   @media screen and(min-width: $desktop) {
     position: relative;
@@ -41,6 +42,10 @@
     margin-bottom: 35px;
 
     margin-right: 40px;
+  }
+  &:focus {
+    outline: 2px solid $primary-title-color;
+    outline-offset: 5px;
   }
 }
 
@@ -65,7 +70,7 @@
   color: $primary-text-color;
 
   &:focus {
-    outline: 2px solid #d41443;
+    outline: 2px solid $primary-title-color;
     outline-offset: 1px;
   }
   &:hover {
@@ -96,8 +101,17 @@
 .btn-site-nav:focus {
   color: $primary-title-color;
   background-color: $secondary-accent-color;
-  outline: 2px solid #d41443;
-  outline-offset: 1px;
+  outline-color: $primary-title-color;
+}
+
+@media screen and(max-width: 1200px) {
+  .btn-site-nav:hover,
+  .btn-site-nav:focus {
+    color: $primary-title-color;
+    background-color: $secondary-accent-color;
+    outline: 2px solid $primary-title-color;
+    outline-offset: 1px;
+  }
 }
 
 .container-btn-site-nav {
@@ -130,6 +144,7 @@
 .btn-icon-site-nav {
   margin-left: 16px;
   fill: rgba(0, 0, 0, 0);
+  stroke: $primary-title-color;
   @media screen and(min-width: $tablet) {
     margin-left: 12px;
   }
@@ -157,10 +172,10 @@
     margin-top: 0;
     margin-right: 0;
     margin-left: auto;
+    margin-top: 38px;
   }
   @media screen and(min-width: $desktop) {
-    // margin-top: 36px;
-    // margin-right: 115px;
+    margin-top: 0;
   }
 }
 
@@ -222,7 +237,7 @@
   }
 
   &:focus {
-    outline: 2px solid #d41443;
+    outline: 2px solid $primary-title-color;
     outline-offset: 5px;
   }
 
@@ -280,7 +295,7 @@
   width: 100%;
   height: 1px;
 
-  background-color: #d41443;
+  background-color: $primary-title-color;
 }
 
 .burger-menu-site-nav > span::before {
@@ -301,7 +316,7 @@
     margin-left: 24px;
 
     &:focus {
-      outline: 2px solid #d41443;
+      outline: 2px solid $primary-title-color;
       outline-offset: 5px;
     }
   }
@@ -323,7 +338,7 @@
     color: #d41443;
   }
   &:focus {
-    outline: 2px solid #d41443;
+    outline: 2px solid $primary-title-color;
     outline-offset: 5px;
   }
 }
