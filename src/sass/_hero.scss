@@ -93,7 +93,7 @@
   align-items: center;
   text-align: center;
 
-  margin-top: 25px;
+  margin-top: 19px;
   padding: 0;
   padding-left: 13px;
   padding-right: 13px;
@@ -112,11 +112,14 @@
   text-decoration: none;
 
   color: #ffffff;
-
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
   @media screen and (min-width: 1200px) {
     height: 40px;
     padding-left: 19px;
     padding-right: 19px;
+    margin-top: 25px;
 
     font-size: 14px;
   }
