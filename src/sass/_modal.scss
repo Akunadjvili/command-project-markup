@@ -1,4 +1,3 @@
-
 .modal {
   position: absolute;
   top: 50%;
@@ -9,24 +8,21 @@
   // width: 250px;
   // height: 400px;
 
-
   // transition: transform $time-transition;
 
-  @media screen and (min-width:320px) and (max-width:1199px) {
-      width: 450px;
-      height: 637px;
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    width: 450px;
+    height: 637px;
   }
 
   @include for-size(desktop) {
-      width: 528px;
-      height: 690px;
+    width: 528px;
+    height: 690px;
   }
-
-
-
 }
 
 .backdrop {
+  z-index: 2000;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.2);
   top: 0px;
@@ -44,7 +40,6 @@
   transform: translate(-50%, -50%) scale(0.1);
 }
 
-
 .title-modal {
   // margin: 0;
   margin-bottom: 25px;
@@ -58,25 +53,22 @@
   color: $primary-title-color;
   // padding-top: 30px;
 
-
-  @media screen and (min-width:320px) and (max-width:1199px) {
-      font-size: 34px;
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    font-size: 34px;
   }
 
   @include for-size(desktop) {
     font-size: 58px;
     letter-spacing: 0.06em;
-  
   }
 }
 
 .modal-list {
   @extend %list;
-  
+
   // @media screen and (min-width: 768px) {
   //   display: flex;
   // }
-  
 }
 .modal-product-item {
   display: block;
@@ -86,11 +78,10 @@
   padding-top: 25px;
   padding-bottom: 25px;
   border-radius: 24px;
-
 }
 
-.icecream-item { 
-  background-color:$alternate-overlay-decor-color;
+.icecream-item {
+  background-color: $alternate-overlay-decor-color;
 }
 
 .icecoffee-item {
@@ -121,7 +112,6 @@
 
 .input-modal {
   display: block;
-  
 }
 
 .modal-form-container {
@@ -132,7 +122,6 @@
 .label-modal {
   color: $white;
   margin-bottom: 5px;
-
 }
 
 .close-btn {
@@ -151,10 +140,9 @@
   fill: $primary-title-color;
 
   &:hover .close-icon {
-      fill: $secondary-accent-color;
+    fill: $secondary-accent-color;
   }
 }
-
 
 .close-icon {
   background-repeat: no-repeat;
@@ -179,7 +167,7 @@
 }
 
 .border-line {
-  border-top: 1px solid #E1E1E1;
+  border-top: 1px solid #e1e1e1;
 }
 
 .modal-button-pay {
@@ -187,11 +175,10 @@
   width: 80%;
   height: 50px;
   display: block;
-  background: #D41342;
+  background: #d41342;
   border-radius: 22px;
   margin: 0 auto;
   margin-bottom: 25px;
-
 }
 
 .modal-pay-text {
