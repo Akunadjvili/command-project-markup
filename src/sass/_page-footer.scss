@@ -8,7 +8,6 @@
 //       background-image: url('../images/gallery/mobile/gallary-bg@2x.jpg');
 //     }
 //   }
-
 //   @media screen and(min-width: $tablet) {
 //     background-image: url('../images/gallery/tablet/gallary-bg.jpg');
 //     @media screen and (min-device-pixel-ratio: 2),
@@ -26,7 +25,6 @@
 //     }
 //   }
 // }
-
 // стили основного блока футера
 .page-footer{
     justify-content: center;
@@ -46,7 +44,6 @@
     background-color: $secondary-bg-color;
 }
 .f-section-title{
-    
     margin: 0;
     padding: 0;
     font-family: $secondary-font;
@@ -78,7 +75,7 @@
     @extend %list;
     @include for-size(mobile){     
         font-size: 18px;
-        line-height: 1.66667;
+        line-height: 1.6667;
         line-height: 1.145;
         margin-bottom: 17px;
         letter-spacing: 0.02em;
@@ -105,7 +102,6 @@
     @include for-size(mobile){
         font-size: 34px;
         letter-spacing: 0.04em;
-
     }
     @include for-size(tablet){
         font-size: 48px;
@@ -115,11 +111,9 @@
         font-size: 58px;
         letter-spacing: 0.06em;
     }
-    line-height: 1.145;
     text-transform: uppercase;
+    line-height: 1.145;
     color: $primary-title-color;
-
-
 }
 .f-container-footer{
     display: flex;
