@@ -141,7 +141,11 @@ input[type=radio].visually-hidden {
   line-height: 1.313;
   color: #ffffff;
 }
-.link-site-nav:hover, .link-site-nav:hover {
+.link-site-nav:focus {
+  outline: 2px solid #d41443;
+  outline-offset: 1px;
+}
+.link-site-nav:hover {
   color: #d41443;
 }
 
@@ -167,6 +171,8 @@ input[type=radio].visually-hidden {
 .btn-site-nav:focus {
   color: #d41443;
   background-color: #ecebeb;
+  outline: 2px solid #d41443;
+  outline-offset: 1px;
 }
 
 .container-btn-site-nav {
@@ -253,14 +259,14 @@ input[type=radio].visually-hidden {
     height: 399px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .mobile-nav-site-nav {
-    display: none;
-  }
-}
 
 .mobile-nav-site-nav.is-open {
   display: block;
+}
+@media (min-width: 1200px) {
+  .mobile-nav-site-nav.is-open {
+    display: none;
+  }
 }
 
 .burger-menu-site-nav {
@@ -276,8 +282,12 @@ input[type=radio].visually-hidden {
   padding-left: 0;
   padding-right: 0;
 }
-.burger-menu-site-nav:hover, .burger-menu-site-nav:focus {
+.burger-menu-site-nav:focus {
   background-color: rgba(0, 0, 0, 0);
+}
+.burger-menu-site-nav:focus {
+  outline: 2px solid #d41443;
+  outline-offset: 5px;
 }
 @media screen and (min-width: 768px) {
   .burger-menu-site-nav {
@@ -352,6 +362,10 @@ input[type=radio].visually-hidden {
   .mobile-nav-list-site-nav {
     margin-left: 24px;
   }
+  .mobile-nav-list-site-nav:focus {
+    outline: 2px solid #d41443;
+    outline-offset: 5px;
+  }
 }
 
 .mobile-nav-list-site-nav .site-nav-item:not(:first-child) {
@@ -366,8 +380,12 @@ input[type=radio].visually-hidden {
   line-height: 1.286;
   color: #ffffff;
 }
-.link-mobile-site-nav:hover, .link-mobile-site-nav:focus {
+.link-mobile-site-nav:hover {
   color: #d41443;
+}
+.link-mobile-site-nav:focus {
+  outline: 2px solid #d41443;
+  outline-offset: 5px;
 }
 
 .hero {
@@ -529,18 +547,18 @@ input[type=radio].visually-hidden {
 }
 
 @media screen and (max-width: 767px) {
-  .anchor__link.products {
+  .anchor__link.hero-products {
     margin-left: 20px;
   }
 }
 @media screen and (min-width: 768px) {
-  .anchor__link.products {
+  .anchor__link.hero-products {
     margin-right: 4px;
     margin-left: 35px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .anchor__link.products {
+  .anchor__link.hero-products {
     margin-right: 15px;
     margin-left: 75px;
   }
@@ -1008,9 +1026,11 @@ input[type=radio].visually-hidden {
   margin-right: auto;
 }
 .products-link:hover, .products-link:focus {
-  border: 1px solid #d41443;
-  outline: 1px #d41443;
   cursor: pointer;
+}
+.products-link:focus {
+  outline: 1px solid #d41443;
+  outline-offset: 1px;
 }
 @media screen and (min-width: 768px) {
   .products-link {
@@ -1050,7 +1070,6 @@ input[type=radio].visually-hidden {
 .manufacture {
   background-color: #fff5f6;
   background-image: url(/manufacture-bg.1b3475d8.png);
-  background-size: 320px 133px;
   background-repeat: no-repeat;
   background-position-y: 49.4%;
   background-position-x: center;
@@ -1068,7 +1087,6 @@ input[type=radio].visually-hidden {
   .manufacture {
     padding-bottom: 139px;
     padding-top: 125px;
-    background-size: 1282px 534px;
     background-repeat: no-repeat;
     background-position-y: 39%;
     background-position-x: center;
@@ -1216,12 +1234,16 @@ input[type=radio].visually-hidden {
   color: #d41443;
   margin-left: 30px;
 }
-.manu__btn:hover,
+.manu__btn:hover, .manu__btn:focus,
 .manu__btn :active {
   background: #ecebeb;
   cursor: pointer;
   animation-duration: 250ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.manu__btn:focus {
+  outline: 1px solid #d41443;
+  outline-offset: 1px;
 }
 .manu__btn::after {
   content: "";
@@ -1271,6 +1293,7 @@ input[type=radio].visually-hidden {
 @media screen and (min-width: 1200px) {
   .manu__item {
     height: 222px;
+    margin-top: 39px;
   }
 }
 
@@ -1286,14 +1309,14 @@ input[type=radio].visually-hidden {
 }
 @media screen and (min-width: 768px) {
   .manu__number {
-    font-size: 42px;
+    font-size: 48px;
     margin-top: 36px;
     margin-bottom: 13px;
   }
 }
 @media screen and (min-width: 1200px) {
   .manu__number {
-    font-size: 65px;
+    font-size: 58px;
     margin-top: 40px;
     margin-bottom: 15px;
   }
@@ -1492,7 +1515,7 @@ input[type=radio].visually-hidden {
 .comment-text-container {
   position: relative;
   z-index: -2;
-  background-color: #FDFDFD;
+  background-color: #fdfdfd;
 }
 @media screen and (max-width: 767px) {
   .comment-text-container {
@@ -1896,6 +1919,10 @@ p {
   line-height: 1.5;
   color: #907e82;
 }
+.locations-contact-list a:focus {
+  outline: 1px solid #d41443;
+  outline-offset: 1px;
+}
 
 @media screen and (min-width: 768px) {
   .locations-contact-list a {
@@ -1955,8 +1982,16 @@ p {
   background-color: #ecebeb;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.locations-button.locations-franchise:focus {
+  outline: 1px solid #d41443;
+  outline-offset: 1px;
+}
 .locations-button.locations-button:hover, .locations-button.locations-button:focus {
   cursor: pointer;
+}
+.locations-button.locations-button:focus {
+  outline: 1px solid #d41443;
+  outline-offset: 1px;
 }
 
 @media screen and (min-width: 768px) {
@@ -2329,6 +2364,10 @@ p {
   color: #d41443;
   text-decoration: none;
 }
+.f-color-tel:focus {
+  outline: 1px solid #d41443;
+  outline-offset: 1px;
+}
 
 .f-phone {
   display: inline-block;
@@ -2382,6 +2421,7 @@ p {
   align-items: center;
   width: 32px;
   height: 32px;
+  color: #ffffff;
   background-color: #fea5bb;
   border-radius: 50%;
   transition-duration: 250ms;
@@ -2389,6 +2429,10 @@ p {
 }
 .f-contacts-icon-link:hover, .f-contacts-icon-link:focus {
   background-color: #d41443;
+}
+.f-contacts-icon-link:focus {
+  outline: 1px solid #d41443;
+  outline-offset: 1px;
 }
 @media (min-width: 320px) {
   .f-contacts-icon-link {

@@ -118,41 +118,44 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/menu.js":[function(require,module,exports) {
-// (() => {
-//   const menuBtnRef = document.querySelector("[data-menu-button]");
-//   const mobileMenuRef = document.querySelector("[data-menu]");
-//   const openStateAnimate = 'animate__fadeInRight';
-//   const closeStateAnimate = 'animate__fadeOutRight';
-//   const element = document.querySelector('[data-menu]');
-//   element.classList.add('animate__animated', openStateAnimate);
-//   menuBtnRef.addEventListener("click", () => {
-//     const expanded =
-//       menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-//     if(expanded){
-//       element.classList.remove(openStateAnimate);
-//       element.classList.add(closeStateAnimate);
-//     }else{
-//       element.classList.remove(closeStateAnimate);
-//       element.classList.add(openStateAnimate);
-//     }
-//     menuBtnRef.classList.toggle("is-open");
-//     menuBtnRef.setAttribute("aria-expanded", !expanded);
-//     if (!mobileMenuRef.classList.contains('is-open')) { 
-//       mobileMenuRef.classList.toggle("is-open");
-//     } 
-//   });
-// })();
 (function () {
   var menuBtnRef = document.querySelector("[data-menu-button]");
   var mobileMenuRef = document.querySelector("[data-menu]");
-  var heroRef = document.querySelector('[data-hero]');
+  var openStateAnimate = 'animate__fadeInRight';
+  var closeStateAnimate = 'animate__fadeOutRight';
+  var element = document.querySelector('[data-menu]');
+  element.classList.add('animate__animated', openStateAnimate);
   menuBtnRef.addEventListener("click", function () {
     var expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+
+    if (expanded) {
+      element.classList.remove(openStateAnimate);
+      element.classList.add(closeStateAnimate);
+    } else {
+      element.classList.remove(closeStateAnimate);
+      element.classList.add(openStateAnimate);
+    }
+
     menuBtnRef.classList.toggle("is-open");
     menuBtnRef.setAttribute("aria-expanded", !expanded);
-    mobileMenuRef.classList.toggle("is-open"); // heroRef.classList.toggle('is-open');
+
+    if (!mobileMenuRef.classList.contains('is-open')) {
+      mobileMenuRef.classList.toggle("is-open");
+    }
   });
-})();
+})(); // (() => {
+//   const menuBtnRef = document.querySelector("[data-menu-button]");
+//   const mobileMenuRef = document.querySelector("[data-menu]");
+//   const heroRef = document.querySelector('[data-hero]');
+//   menuBtnRef.addEventListener("click", () => {
+//     const expanded =
+//       menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+//     menuBtnRef.classList.toggle("is-open");
+//     menuBtnRef.setAttribute("aria-expanded", !expanded);
+//     mobileMenuRef.classList.toggle("is-open");
+//     // heroRef.classList.toggle('is-open');
+//   });
+// })();
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -181,7 +184,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "5304" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "14005" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
