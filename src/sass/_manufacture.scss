@@ -1,7 +1,6 @@
 .manufacture {
   background-color: $secondary-bg-color;
   background-image: url(../images/manufacture/mobile/manufacture-bg.png);
-  background-size: 320px 133px;
   background-repeat: no-repeat;
   background-position-y: 49.4%;
   background-position-x: center;
@@ -17,7 +16,6 @@
   @media screen and (min-width: $desktop) {
     padding-bottom: 139px;
     padding-top: 125px;
-    background-size: 1282px 534px;
     background-repeat: no-repeat;
     background-position-y: 39%;
     background-position-x: center;
@@ -220,6 +218,7 @@
 
   @media screen and (min-width: $desktop) {
     height: 222px;
+    margin-top: 39px;
   }
 }
 
@@ -236,13 +235,13 @@
   margin-bottom: 15px;
 
   @media screen and (min-width: $tablet) {
-    font-size: 42px;
+    font-size: 48px;
     margin-top: 36px;
     margin-bottom: 13px;
   }
 
   @media screen and (min-width: $desktop) {
-    font-size: 65px;
+    font-size: 58px;
     margin-top: 40px;
     margin-bottom: 15px;
   }
