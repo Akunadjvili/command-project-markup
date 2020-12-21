@@ -89,18 +89,12 @@ input[type=radio].visually-hidden {
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0);
 }
-@media (max-width: 767px) {
-  .site-nav.is-open {
-    overflow-x: hidden;
-    height: 502px;
+@media screen and (max-width: 1199px) {
+  .site-nav {
+    overflowx: hidden;
   }
 }
-@media (min-width: 768px) {
-  .site-nav.is-open {
-    overflow-x: hidden;
-    height: 399px;
-  }
-}
+
 .container-site-nav {
   position: relative;
   display: flex;
@@ -434,7 +428,7 @@ input[type=radio].visually-hidden {
 }
 @media screen and (max-width: 767px) {
   .hero {
-    width: 320px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
