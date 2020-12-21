@@ -88,15 +88,19 @@ input[type=radio].visually-hidden {
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0);
-  overflow-x: hidden;
-  height: 100%;
 }
-@media screen and (max-width: 1199px) {
-  .site-nav {
-    overflowx: hidden;
+@media (max-width: 767px) {
+  .site-nav.is-open {
+    overflow-x: hidden;
+    height: 502px;
   }
 }
-
+@media (min-width: 768px) {
+  .site-nav.is-open {
+    overflow-x: hidden;
+    height: 399px;
+  }
+}
 .container-site-nav {
   position: relative;
   display: flex;
